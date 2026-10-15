@@ -52,7 +52,7 @@ export function Studio() {
               strokeWidth="1.3"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-[17px] w-[17px] shrink-0 transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
+              className="h-[17px] w-[17px] shrink-0 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transition-none"
             >
               <path d="M7 17 17 7" />
               <path d="M8 7h9v9" />
