@@ -47,7 +47,7 @@ export function ServiceDetails() {
               <summary
                 data-service-summary={index}
                 aria-expanded={expandedService === index}
-                className="grid cursor-pointer grid-cols-[42px_1fr_30px] items-center gap-3 px-0 py-[25px]"
+                className="grid cursor-pointer grid-cols-[42px_1fr_30px] items-center gap-3 pl-[22px] pr-[6px] py-[25px] max-md:px-0"
                 onClick={(event) => {
                   event.preventDefault();
                   toggleService(index);
@@ -69,20 +69,24 @@ export function ServiceDetails() {
                   </span>
                 </span>
               </summary>
-              <div className="max-w-[680px] pb-[30px]">
-                <p className="max-w-[530px] text-[13px] leading-[1.65] text-[#5f645d]">
-                  {service.description}
-                </p>
-                <ul className="mt-[17px] flex list-none flex-wrap gap-2">
-                  {service.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="border border-[#c5c7bf] px-2.5 py-2 text-[10px] text-[#60645e]"
-                    >
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+
+              <div className="grid grid-cols-[42px_minmax(0,1fr)_30px] gap-3 pl-[22px] pr-[6px] pb-[32px] max-md:px-0">
+                <div className="col-start-2 min-w-0">
+                  <p className="max-w-[530px] text-[13px] leading-[1.8] text-[#5f645d]">
+                    {service.description}
+                  </p>
+
+                  <ul className="mt-[22px] flex list-none flex-wrap gap-2">
+                    {service.features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="border border-[#c5c7bf] px-3 py-2 text-[10px] leading-[1.5] text-[#60645e]"
+                      >
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </details>
           ))}
