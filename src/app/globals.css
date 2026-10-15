@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* WONDER design system. Change the palette here, not in dozens of selectors. */
+@theme {
+  --color-paper: #f2efe8;
+  --color-paper-soft: #f7f5f0;
+  --color-ink: #171b17;
+  --color-forest: #19251f;
+  --color-editorial: #343a34;
+  --color-sand: #e8e5dd;
+  --color-mist: #ece9e2;
+  --color-philosophy: #deddd4;
+  --color-wonder-line: #c9c7bf;
+  --color-wonder-muted: #6d716c;
+  --color-footer: #202720;
+
+  --font-sans: "Inter Display", Inter, "Helvetica Neue", Arial, sans-serif;
+  --font-editorial: "GFS Didot", "Times New Roman", Georgia, serif;
+
+  /* Original design uses 780px and 1100px breakpoints. */
+  --breakpoint-md: 781px;
+  --breakpoint-lg: 1101px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; }
+
+::selection {
+  background: #27372d;
+  color: #f5f2ea;
+}
+
+:focus-visible {
+  outline: 2px solid #738171;
+  outline-offset: 3px;
+}
+
+dialog::backdrop {
+  background: rgba(12, 17, 14, .76);
+  backdrop-filter: blur(3px);
+}
+
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+
+@media (max-width: 780px) {
+  html { scroll-padding-top: 68px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
