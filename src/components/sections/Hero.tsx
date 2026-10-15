@@ -31,11 +31,11 @@ export function Hero() {
             <span>Start a project</span>
             <span
               aria-hidden="true"
-              className="grid size-10 shrink-0 place-items-center rounded-full border border-current"
+              className="grid shrink-0 place-items-center"
             >
               <svg
                 viewBox="0 0 24 24"
-                className="size-[17px]"
+                className="size-[17px] shrink-0 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transition-none"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.4"
@@ -52,9 +52,20 @@ export function Hero() {
             className="group inline-flex min-w-[146px] items-center justify-between gap-6 rounded-full border border-ink bg-transparent px-[21px] py-[13px] text-sm transition-colors hover:bg-white max-[360px]:min-w-0 max-[360px]:gap-4 max-[360px]:px-4"
           >
             <span>Our approach</span>
-            <span className="transition-transform group-hover:translate-x-0.5">
-              →
-            </span>
+
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="size-[17px] shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none"
+            >
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
           </a>
         </div>
         <div className="mt-auto flex justify-between gap-5 pt-[55px] text-[9px] tracking-[.15em] text-[#777b74] uppercase">
