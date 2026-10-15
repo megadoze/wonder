@@ -23,9 +23,8 @@ export function Hero() {
           Thoughtful interiors with character — shaped around the way you live.
         </p>
         <div className="flex flex-wrap gap-3 max-[360px]:gap-2">
-          <button
-            type="button"
-            onClick={openContact}
+          <a
+            href="#contact"
             className="group inline-flex min-w-[146px] items-center justify-between gap-6 rounded-full border border-forest bg-forest px-[21px] py-[13px] text-sm text-white transition-colors hover:bg-[#2a382f] max-[360px]:min-w-0 max-[360px]:gap-4 max-[360px]:px-4"
           >
             <span>Start a project</span>
@@ -46,7 +45,8 @@ export function Hero() {
                 <path d="M8 7h9v9" />
               </svg>
             </span>
-          </button>
+          </a>
+
           <a
             href="#approach"
             className="group inline-flex min-w-[146px] items-center justify-between gap-6 rounded-full border border-ink bg-transparent px-[21px] py-[13px] text-sm transition-colors hover:bg-white max-[360px]:min-w-0 max-[360px]:gap-4 max-[360px]:px-4"

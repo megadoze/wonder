@@ -1,65 +1,82 @@
 // All copy and project details are kept separate from the page UI for easy editing.
 export const navigation = [
-  { href: '#services', label: 'Services' },
-  { href: '#work', label: 'Spaces' },
-  { href: '#approach', label: 'Approach' },
-  { href: '#studio', label: 'Studio' },
-  { href: '#contact', label: 'Contact' },
+  { href: "#services", label: "Services" },
+  { href: "#work", label: "Spaces" },
+  { href: "#approach", label: "Approach" },
+  { href: "#studio", label: "Studio" },
+  { href: "#contact", label: "Contact" },
 ] as const;
 
 export const services = [
   {
-    title: 'Interior Design',
-    short: 'Complete interior concepts from vision to refined details.',
+    title: "Interior Design",
+    short:
+      "Complete interior concepts, from spatial planning to the finest details.",
     description:
-      'A complete interior direction that brings layout, atmosphere, colour, furniture, lighting and detail into one coherent whole.',
-    features: ['Concept & visual direction', 'Room-by-room design', 'Colour, lighting & atmosphere'],
+      "A comprehensive design concept for a room or an entire home. From spatial organisation and visual direction to furniture, materials and lighting, each element is developed as part of a cohesive interior. The result is a clear design direction shaped by the space and the way it will be lived in.",
+    features: [
+      "Spatial concept & layouts",
+      "Moodboards & visual direction",
+      "Furniture, finishes & lighting",
+    ],
   },
   {
-    title: 'Space Planning',
-    short: 'Thoughtful layouts tailored to the way you live.',
+    title: "Space Planning",
+    short: "Intelligent layouts that make the most of every space.",
     description:
-      'A focused study of how the space should work — improving flow, proportion, furniture placement and everyday function.',
-    features: ['Functional zoning', 'Furniture layouts', 'Movement, scale & proportion'],
+      "A focused exploration of how a space can work better. Through thoughtful zoning, circulation and furniture placement, WONDER develops layout solutions that improve everyday function while respecting the proportions and character of the interior.",
+    features: [
+      "Layout options",
+      "Functional zoning",
+      "Furniture placement & circulation",
+    ],
   },
   {
-    title: 'Furniture & Materials',
-    short: 'Curated furniture, finishes and lighting with a clear point of view.',
+    title: "Furniture & Materials",
+    short: "Considered selections of furniture, finishes and lighting.",
     description:
-      'A curated material and furnishing direction that gives the interior depth, character and visual consistency.',
-    features: ['Furniture selection', 'Materials & finishes', 'Decorative lighting & details'],
+      "For spaces where the layout is already established, WONDER brings together furniture, materials, finishes and decorative lighting into a consistent visual direction. The focus is on creating balance, texture and character through carefully considered combinations.",
+    features: [
+      "Material & finish palettes",
+      "Furniture selection",
+      "Decorative lighting & details",
+    ],
   },
   {
-    title: 'Design Support',
-    short: 'Focused guidance when you need an experienced design perspective.',
+    title: "Design Support",
+    short: "Focused design guidance for important decisions.",
     description:
-      'A flexible design perspective for clients who are developing or implementing ideas and want expert input at key moments.',
-    features: ['Design consultations', 'Review of selections', 'Direction & consistency'],
+      "Targeted design consultations for projects already taking shape. Whether reviewing a layout, considering material options or resolving a particular design challenge, WONDER provides an independent perspective and practical recommendations to help move the project forward with confidence.",
+    features: [
+      "Individual consultations",
+      "Review of layouts & selections",
+      "Design recommendations",
+    ],
   },
 ] as const;
 
 export const projects = [
   {
-    title: 'Light & Atmosphere',
-    descriptor: 'INTERIOR STUDY',
-    src: '/images/interior-study-light.webp',
-    alt: 'Contemporary dining interior with layered lighting and warm wood details',
+    title: "Light & Atmosphere",
+    descriptor: "INTERIOR STUDY",
+    src: "/images/interior-study-light.webp",
+    alt: "Contemporary dining interior with layered lighting and warm wood details",
     width: 1536,
     height: 1024,
   },
   {
-    title: 'Form & Material',
-    descriptor: 'INTERIOR STUDY',
-    src: '/images/interior-study-form.webp',
-    alt: 'Minimal contemporary kitchen with strong lines and a sculptural central island',
+    title: "Form & Material",
+    descriptor: "INTERIOR STUDY",
+    src: "/images/interior-study-form.webp",
+    alt: "Minimal contemporary kitchen with strong lines and a sculptural central island",
     width: 1536,
     height: 1024,
   },
   {
-    title: 'Privacy & Calm',
-    descriptor: 'INTERIOR STUDY',
-    src: '/images/interior-study-calm.webp',
-    alt: 'Peaceful bedroom with thoughtful furniture, soft textiles, and filtered natural daylight',
+    title: "Privacy & Calm",
+    descriptor: "INTERIOR STUDY",
+    src: "/images/interior-study-calm.webp",
+    alt: "Peaceful bedroom with thoughtful furniture, soft textiles, and filtered natural daylight",
     width: 1536,
     height: 1024,
   },
@@ -67,21 +84,22 @@ export const projects = [
 
 export const processSteps = [
   {
-    title: 'Discover',
-    body: 'How you live, what matters, what needs to change and what the space should feel like.',
+    title: "Discover",
+    body: "Understanding the space, its possibilities, the project brief and what matters most.",
   },
   {
-    title: 'Plan',
-    body: 'Layout, circulation, scale and the spatial logic that makes everyday life work better.',
+    title: "Define",
+    body: "Establishing the spatial concept, key priorities and a clear visual direction.",
   },
   {
-    title: 'Define',
-    body: 'Colour, furniture, materials, lighting and details shaped into one clear design direction.',
+    title: "Develop",
+    body: "Bringing together materials, furniture, lighting and details into a coherent design.",
   },
   {
-    title: 'Refine',
-    body: 'Selections are resolved, questions are reviewed and the concept stays coherent as decisions are made.',
+    title: "Refine",
+    body: "Reviewing decisions, making final adjustments and preparing the agreed design materials.",
   },
-] as const;
+];
 
-export const formatIndex = (index: number) => String(index + 1).padStart(2, '0');
+export const formatIndex = (index: number) =>
+  String(index + 1).padStart(2, "0");

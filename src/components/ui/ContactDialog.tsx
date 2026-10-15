@@ -1,38 +1,59 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import type { FormEvent } from "react";
 import { services } from "@/data/content";
 import { ModalShell } from "./ModalShell";
 
-export function ContactDialog({ onClose }: { onClose: () => void }) {
-  const [feedback, setFeedback] = useState("");
-  const [fallbackText, setFallbackText] = useState("");
-  const fallbackRef = useRef<HTMLTextAreaElement>(null);
+type FormStatus = "idle" | "submitting" | "success" | "error";
 
-  useEffect(() => {
-    if (fallbackText) {
-      fallbackRef.current?.focus();
-      fallbackRef.current?.select();
-    }
-  }, [fallbackText]);
+export function ContactDialog({ onClose }: { onClose: () => void }) {
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [feedback, setFeedback] = useState("");
+
+  const isSubmitting = status === "submitting";
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const values = new FormData(event.currentTarget);
-    const brief = `WONDER — PROJECT ENQUIRY\n\nName: ${values.get("name")}\nEmail: ${values.get("email")}\nService: ${values.get("service")}\n\nAbout the space:\n${values.get("project")}`;
+
+    if (isSubmitting) return;
+
+    const form = event.currentTarget;
+    const values = new FormData(form);
+
+    const enquiry = {
+      name: String(values.get("name") ?? "").trim(),
+      email: String(values.get("email") ?? "").trim(),
+      service: String(values.get("service") ?? ""),
+      project: String(values.get("project") ?? "").trim(),
+      website: String(values.get("website") ?? ""),
+    };
+
+    setStatus("submitting");
+    setFeedback("");
+
     try {
-      if (!navigator.clipboard?.writeText)
-        throw new Error("Clipboard API unavailable");
-      await navigator.clipboard.writeText(brief);
-      setFallbackText("");
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(enquiry),
+      });
+
+      if (!response.ok) {
+        throw new Error("Enquiry submission failed");
+      }
+
+      form.reset();
+      setStatus("success");
       setFeedback(
-        "Enquiry copied. Nothing has been sent — paste it into your email when ready.",
+        "Thank you. Your enquiry has been submitted. WONDER will be in touch by email.",
       );
     } catch {
-      setFallbackText(brief);
+      setStatus("error");
       setFeedback(
-        "Your enquiry is ready below. Select and copy it; nothing has been sent.",
+        "Something went wrong. Your enquiry has not been confirmed. Please try again.",
       );
     }
   }
@@ -52,9 +73,11 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
       >
         CLOSE ✕
       </button>
+
       <p className="mb-[18px] text-[9px] tracking-[.15em] text-[#777b74] uppercase">
         WONDER / PROJECT ENQUIRY
       </p>
+
       <h2
         id="contact-dialog-heading"
         className="mb-6 font-editorial text-[clamp(44px,8vw,60px)] leading-[.9] tracking-[-.035em]"
@@ -63,39 +86,62 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
         <br />
         <em className="font-normal text-[#5e695f]">your space.</em>
       </h2>
-      <p className="text-xs leading-[1.6] text-[#73776f]">
-        Prototype enquiry form — nothing is sent from this page. It prepares a
-        concise project brief for you to copy.
+
+      <p className="max-w-[450px] text-xs leading-[1.7] text-[#73776f]">
+        Share a few details about your project. WONDER will get back to you by
+        email to discuss the next steps.
       </p>
-      <form onSubmit={submit} className="mt-7 grid gap-4">
+
+      <form
+        onSubmit={submit}
+        aria-busy={isSubmitting}
+        className="mt-7 grid gap-4"
+      >
+        {/* Spam honeypot */}
+        <div className="absolute -left-[9999px]" aria-hidden="true">
+          <label>
+            Website
+            <input
+              type="text"
+              name="website"
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </label>
+        </div>
+
         <label className="block text-[9px] tracking-[.1em] text-[#6d716a] uppercase">
           Your name
           <input
             autoComplete="name"
             name="name"
             required
+            maxLength={120}
             type="text"
             placeholder="Name"
-            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base md:text-sm normal-case tracking-normal text-ink outline-offset-2"
+            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base normal-case tracking-normal text-ink outline-offset-2 md:text-sm"
           />
         </label>
+
         <label className="block text-[9px] tracking-[.1em] text-[#6d716a] uppercase">
           Email address
           <input
             autoComplete="email"
             name="email"
             required
+            maxLength={254}
             type="email"
             placeholder="Email"
-            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base md:text-sm normal-case tracking-normal text-ink outline-offset-2"
+            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base normal-case tracking-normal text-ink outline-offset-2 md:text-sm"
           />
         </label>
+
         <label className="block text-[9px] tracking-[.1em] text-[#6d716a] uppercase">
           How can we help?
           <select
             name="service"
             defaultValue="Interior Design"
-            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-sm normal-case tracking-normal text-ink"
+            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base normal-case tracking-normal text-ink outline-offset-2 md:text-sm"
           >
             {services.map((service) => (
               <option key={service.title} value={service.title}>
@@ -104,22 +150,26 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
             ))}
           </select>
         </label>
+
         <label className="block text-[9px] tracking-[.1em] text-[#6d716a] uppercase">
           About your space
           <textarea
             name="project"
             required
+            minLength={10}
+            maxLength={4000}
             rows={4}
             placeholder="Tell us about the space, what you want to change and where you are in the process…"
-            className="mt-2 block w-full resize-y rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base md:text-sm normal-case tracking-normal text-ink"
+            className="mt-2 block w-full resize-y rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base normal-case tracking-normal text-ink outline-offset-2 md:text-sm"
           />
         </label>
 
         <button
           type="submit"
-          className="group mt-2 flex w-fit min-w-[146px] items-center justify-between gap-6 rounded-full border border-forest bg-forest px-5 py-3 text-sm text-white transition-colors hover:bg-[#2a382f]"
+          disabled={isSubmitting}
+          className="group mt-2 flex w-fit min-w-[180px] items-center justify-between gap-6 rounded-full border border-forest bg-forest px-5 py-3 text-sm text-white transition-colors hover:bg-[#2a382f] disabled:cursor-wait disabled:opacity-60"
         >
-          <span>Copy enquiry text</span>
+          <span>{isSubmitting ? "Sending…" : "Send enquiry"}</span>
 
           <svg
             aria-hidden="true"
@@ -138,22 +188,11 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
 
         <p
           aria-live="polite"
-          role="status"
-          className="min-h-[18px] text-[11px] text-[#5f655d]"
+          role={status === "error" ? "alert" : "status"}
+          className="min-h-[18px] text-[11px] leading-[1.6] text-[#5f655d]"
         >
           {feedback}
         </p>
-        {fallbackText && (
-          <textarea
-            ref={fallbackRef}
-            aria-label="Prepared enquiry text to copy"
-            rows={7}
-            value={fallbackText}
-            readOnly
-            onFocus={(event) => event.currentTarget.select()}
-            className="w-full border border-[#aaa] bg-paper-soft p-3 text-base md:text-xs"
-          />
-        )}
       </form>
     </ModalShell>
   );

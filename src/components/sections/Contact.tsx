@@ -1,11 +1,20 @@
-"use client";
+/**
+ * 07 / START A CONVERSATION
+ * Direct contact via WhatsApp and Telegram.
+ */
 
-import { useExperience } from "@/components/ui/ExperienceProvider";
+// Replace with your personal contacts.
+const whatsappNumber = "34664192763";
+const telegramUsername = "Parmegano";
 
-/** 05 / START A CONVERSATION — Edition 04 layout with our original pill CTA. */
+const whatsappMessage =
+  "Hello WONDER, I'd like to discuss an interior design project.";
+
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+const telegramUrl = `https://t.me/${telegramUsername}`;
+
 export function Contact() {
-  const { openContact } = useExperience();
-
   return (
     <section
       id="contact"
@@ -26,32 +35,63 @@ export function Contact() {
           <br />
           <em className="font-normal text-[#c2c9bb]">with your space.</em>
         </h2>
-        <div className="max-w-[370px] pb-1">
-          <p className="mb-10 max-w-[340px] text-[16px] leading-[1.6] text-[#d0d3c9] max-md:mb-7 max-md:text-[15px]">
-            Whether you have a clear brief or just the beginnings of an idea,
-            tell us what you are planning and where you need design support.
-          </p>
-          <button
-            type="button"
-            onClick={openContact}
-            className="group inline-flex min-w-[220px] items-center justify-between gap-10 rounded-full border border-paper-soft bg-paper-soft px-[25px] py-[17px] text-[13px] text-ink transition-colors duration-200 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-          >
-            <span>Start a conversation</span>
 
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-[19px] w-[19px] shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transition-none"
+        <div className="max-w-[370px] pb-1">
+          <p className="mb-9 max-w-[340px] text-[16px] leading-[1.6] text-[#d0d3c9] max-md:mb-7 max-md:text-[15px]">
+            Tell us a little about your space, what you are hoping to create and
+            the kind of design support you need. A few details are enough to
+            begin.
+          </p>
+
+          <div className="flex flex-col items-start gap-6">
+            {/* Primary contact: WhatsApp */}
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex min-w-[245px] items-center justify-between gap-10 rounded-full border border-paper-soft bg-paper-soft px-[25px] py-[17px] text-[13px] text-ink transition-colors duration-200 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
-              <path d="M7 17 17 7" />
-              <path d="M8 7h9v9" />
-            </svg>
-          </button>
+              <span>Chat on WhatsApp</span>
+
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-[19px] w-[19px] shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transition-none"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M8 7h9v9" />
+              </svg>
+            </a>
+
+            {/* Secondary contact: Telegram */}
+            <a
+              href={telegramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 border-b border-[#929d90] pb-2 text-[13px] text-[#d0d3c9] transition-colors duration-200 hover:border-white hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            >
+              <span>Prefer Telegram?</span>
+
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-[16px] w-[16px] shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transition-none"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M8 7h9v9" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
