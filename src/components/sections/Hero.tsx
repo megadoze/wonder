@@ -1,16 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useExperience } from "@/components/ui/ExperienceProvider";
 
 export function Hero() {
-  const { openContact } = useExperience();
   return (
     <section
       aria-label="WONDER introduction"
       className="grid min-h-[720px] grid-cols-[34%_66%] bg-paper-soft max-lg:md:grid-cols-[38%_62%] max-md:grid-cols-1"
     >
-      <div className="flex min-w-0 flex-col pt-[108px] pr-[7.2%] pb-7 pl-[14%] max-lg:md:pr-[7%] max-lg:md:pl-[9%] max-md:min-h-[610px] max-md:px-5 max-md:pt-[100px] max-md:pb-6">
+      <div className="flex min-w-0 flex-col pt-[108px] pr-[7.2%] pb-7 pl-[14%] max-lg:md:pr-[7%] max-lg:md:pl-[9%] max-md:min-h-0 max-md:px-5 max-md:pt-[80px] max-md:pb-[64px]">
         {/* <p className="mt-[3px] mb-10 text-[9px] tracking-[.15em] text-[#666b64] uppercase max-md:mb-[45px]">INTERIOR DESIGN / PERSONAL BY DESIGN</p> */}
         <h1 className="pt-5 max-w-[560px] font-editorial text-[clamp(74px,7.2vw,128px)] leading-[.78] tracking-[-.052em] max-lg:md:text-[clamp(70px,8.2vw,105px)] max-md:text-[clamp(70px,18.8vw,102px)] max-[360px]:text-[65px]">
           Spaces
