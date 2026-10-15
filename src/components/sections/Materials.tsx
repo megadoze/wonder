@@ -42,9 +42,20 @@ export function Materials() {
             className="group mt-3.5 inline-flex min-w-[205px] items-center justify-between gap-10 border-b border-ink bg-transparent py-2.5 text-left text-xs"
           >
             <span>Explore Furniture &amp; Materials</span>
-            <span className="transition-transform group-hover:translate-x-0.5">
-              ↗
-            </span>
+
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-[17px] w-[17px] shrink-0 transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M8 7h9v9" />
+            </svg>
           </button>
           <div className="mt-auto pt-12 text-[9px] tracking-[.13em] text-[#848980] max-md:pt-6">
             MATERIAL STUDIES / CONCEPT IMAGERY

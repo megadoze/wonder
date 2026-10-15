@@ -1,4 +1,4 @@
-# WONDER — Hybrid Edition (Next.js 16 + Tailwind CSS 4)
+# WONDER (Next.js 16 + Tailwind CSS 4)
 
 WONDER — Interior Design Studio
 

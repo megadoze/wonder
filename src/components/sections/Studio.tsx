@@ -19,7 +19,8 @@ export function Studio() {
           id="studio-heading"
           className="font-editorial text-[clamp(52px,5.55vw,88px)] leading-[1.08] tracking-[-.045em] max-lg:md:text-[clamp(48px,5vw,74px)] max-md:text-[clamp(49px,11vw,70px)]"
         >
-          A clear vision.<br />
+          A clear vision.
+          <br />
           <em className="font-normal text-[#757c70]">A personal space.</em>
         </h2>
 
@@ -28,19 +29,34 @@ export function Studio() {
             A good interior begins with understanding the people who live in it.
           </p>
           <p className="mb-[18px] text-sm leading-[1.85] text-[#666962]">
-            We listen to how you use a room, what matters to you, and how you want to feel there.
-            From these essentials, a distinctive design direction takes shape.
+            We listen to how you use a room, what matters to you, and how you
+            want to feel there. From these essentials, a distinctive design
+            direction takes shape.
           </p>
           <p className="mb-[18px] text-sm leading-[1.85] text-[#666962]">
-            Our work brings together spatial planning, material choices and considered details.
-            Every decision has a purpose — and a place in the whole.
+            Our work brings together spatial planning, material choices and
+            considered details. Every decision has a purpose — and a place in
+            the whole.
           </p>
           <a
             href="#service-details"
             className="group mt-5 inline-flex w-max items-center justify-between gap-8 border-b border-ink pb-2.5 text-xs transition-opacity hover:opacity-75"
           >
             <span>Explore our services</span>
-            <span aria-hidden="true" className="text-[17px] transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none">↗</span>
+
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-[17px] w-[17px] shrink-0 transition-transform duration-300 group-hover:translate-x-1 motion-reduce:transition-none"
+            >
+              <path d="M7 17 17 7" />
+              <path d="M8 7h9v9" />
+            </svg>
           </a>
         </div>
       </div>

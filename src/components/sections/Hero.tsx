@@ -29,8 +29,22 @@ export function Hero() {
             className="group inline-flex min-w-[146px] items-center justify-between gap-6 rounded-full border border-forest bg-forest px-[21px] py-[13px] text-sm text-white transition-colors hover:bg-[#2a382f] max-[360px]:min-w-0 max-[360px]:gap-4 max-[360px]:px-4"
           >
             <span>Start a project</span>
-            <span className="transition-transform group-hover:translate-x-0.5">
-              ↗
+            <span
+              aria-hidden="true"
+              className="grid size-10 shrink-0 place-items-center rounded-full border border-current"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="size-[17px]"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M8 7h9v9" />
+              </svg>
             </span>
           </button>
           <a
