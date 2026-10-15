@@ -11,8 +11,8 @@ export function Materials() {
       id="materials"
       className="bg-sand px-[4.5%] pt-[68px] pb-[78px] max-md:px-5 max-md:pt-[58px] max-md:pb-[66px]"
     >
-      <div className="flex justify-between gap-5 border-t border-wonder-line pt-[13px] text-[9px] tracking-[.15em] text-[#777b74] uppercase">
-        <span>MATERIALS &amp; DETAILS</span>
+      <div className="flex justify-between gap-5 border-b border-wonder-line pb-[21px] text-[9px] tracking-[.15em] text-[#777b74] uppercase">
+        <span>03 / MATERIALS &amp; DETAILS</span>
         <span className="text-right">TEXTURE / LIGHT / FORM</span>
       </div>
       <div className="mt-[47px] grid grid-cols-[minmax(290px,.68fr)_minmax(0,1.32fr)] items-stretch gap-[5.2vw] max-lg:md:grid-cols-[minmax(240px,.76fr)_minmax(0,1.24fr)] max-lg:md:gap-[3vw] max-md:mt-[30px] max-md:grid-cols-1 max-md:gap-[34px]">

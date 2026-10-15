@@ -4,7 +4,7 @@ import { SectionRule } from '@/components/ui/SectionRule';
 export function Approach() {
   return (
     <section id="approach" className="bg-mist px-[4.5%] py-[85px] max-md:px-5 max-md:py-16">
-      <SectionRule left="OUR APPROACH" right="PERSONAL BY DESIGN" />
+      <SectionRule left="04 / OUR APPROACH" right="PERSONAL BY DESIGN" />
       <div className="grid grid-cols-[.75fr_1.25fr] gap-[7vw] pt-[62px] max-lg:grid-cols-1 max-md:pt-[45px]">
         <div>
           <h2 className="mb-7 font-editorial text-[clamp(55px,5.1vw,86px)] leading-[.92] tracking-[-.035em] max-md:text-[clamp(52px,13vw,72px)]">A process built<br /><em className="font-normal text-[#5d675f]">around you.</em></h2>

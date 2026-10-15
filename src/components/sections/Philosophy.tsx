@@ -18,7 +18,7 @@ export function Philosophy() {
       </div>
       <div className="flex min-w-0 flex-col justify-between px-[clamp(35px,5vw,85px)] pt-[66px] pb-[43px] max-lg:md:px-[38px] max-lg:md:pt-[52px] max-lg:md:pb-[35px] max-md:min-h-[540px] max-md:px-5 max-md:pt-[50px] max-md:pb-[30px]">
         <p className="text-[9px] leading-[1.6] font-medium tracking-[.14em] text-[#676e64]">
-          WONDER / PHILOSOPHY
+          05 / PHILOSOPHY
         </p>
         <div className="py-[45px] max-md:py-[42px]">
           <h2

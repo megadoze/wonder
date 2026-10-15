@@ -68,10 +68,10 @@ export function Hero() {
             </svg>
           </a>
         </div>
-        <div className="mt-auto flex justify-between gap-5 pt-[55px] text-[9px] tracking-[.15em] text-[#777b74] uppercase">
+        {/* <div className="mt-auto flex justify-between gap-5 pt-[55px] text-[9px] tracking-[.15em] text-[#777b74] uppercase">
           <span>WONDER / INTERIOR DESIGN</span>
           <span>01 — 04</span>
-        </div>
+        </div> */}
       </div>
       <div className="relative min-h-[720px] overflow-hidden max-md:h-[55vh] max-md:min-h-[430px]">
         <Image

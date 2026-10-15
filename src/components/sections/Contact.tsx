@@ -13,7 +13,7 @@ export function Contact() {
       className="bg-[#30362f] px-[4.5%] pt-[75px] pb-[48px] text-[#f6f5ed] max-md:px-5 max-md:pt-[62px] max-md:pb-9"
     >
       <div className="flex items-center justify-between gap-6 border-b border-[#626760] pb-[21px] text-[9px] leading-[1.55] font-medium tracking-[.145em] text-[#c0c3bb] max-md:text-[8px]">
-        <span>05 / START A CONVERSATION</span>
+        <span>07 / START A CONVERSATION</span>
         <span className="text-right">WONDER / INTERIOR DESIGN</span>
       </div>
 

@@ -9,7 +9,7 @@ export function ServiceDetails() {
   const { expandedService, toggleService } = useExperience();
   return (
     <section id="service-details" className="bg-paper px-[4.5%] pt-[72px] pb-[85px] max-md:px-5 max-md:py-16">
-      <SectionRule left="WHAT WE DO" right="FOUR FOCUSED SERVICES" />
+      <SectionRule left="06 / WHAT WE DO" right="FOUR FOCUSED SERVICES" />
       <div className="grid grid-cols-[.8fr_1.2fr] gap-[8vw] pt-[66px] max-lg:md:grid-cols-[1fr_1.25fr] max-md:grid-cols-1 max-md:pt-12">
         <div>
           <h2 className="mb-[26px] font-editorial text-[clamp(53px,5vw,82px)] leading-[.92] tracking-[-.035em] max-md:text-[clamp(50px,13vw,70px)]">Four ways to work<br /><em className="font-normal text-[#5d675f]">with WONDER.</em></h2>
