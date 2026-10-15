@@ -76,7 +76,7 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
             required
             type="text"
             placeholder="Name"
-            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-sm normal-case tracking-normal text-ink outline-offset-2"
+            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base md:text-sm normal-case tracking-normal text-ink outline-offset-2"
           />
         </label>
         <label className="block text-[9px] tracking-[.1em] text-[#6d716a] uppercase">
@@ -87,7 +87,7 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
             required
             type="email"
             placeholder="Email"
-            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-sm normal-case tracking-normal text-ink outline-offset-2"
+            className="mt-2 block w-full rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base md:text-sm normal-case tracking-normal text-ink outline-offset-2"
           />
         </label>
         <label className="block text-[9px] tracking-[.1em] text-[#6d716a] uppercase">
@@ -111,7 +111,7 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
             required
             rows={4}
             placeholder="Tell us about the space, what you want to change and where you are in the process…"
-            className="mt-2 block w-full resize-y rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-sm normal-case tracking-normal text-ink"
+            className="mt-2 block w-full resize-y rounded-none border-0 border-b border-[#9da198] bg-transparent px-0 py-2.5 text-base md:text-sm normal-case tracking-normal text-ink"
           />
         </label>
 
@@ -151,7 +151,7 @@ export function ContactDialog({ onClose }: { onClose: () => void }) {
             value={fallbackText}
             readOnly
             onFocus={(event) => event.currentTarget.select()}
-            className="w-full border border-[#aaa] bg-paper-soft p-3 text-xs"
+            className="w-full border border-[#aaa] bg-paper-soft p-3 text-base md:text-xs"
           />
         )}
       </form>
