@@ -10,7 +10,7 @@ export function ServiceStrip() {
     <section
       aria-label="WONDER services"
       id="services"
-      className="grid grid-cols-4 bg-forest px-[3.2%] pt-[29px] pb-[31px] text-[#f4f1e9] max-lg:md:grid-cols-2 max-md:grid-cols-1 max-md:px-5 max-md:py-3"
+      className="grid grid-cols-4 bg-footer px-[3.2%] pt-[29px] pb-[31px] text-[#f4f1e9] max-lg:md:grid-cols-2 max-md:grid-cols-1 max-md:px-5 max-md:py-3"
     >
       {services.map((service, index) => (
         <button
