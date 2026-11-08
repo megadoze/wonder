@@ -1,0 +1,189 @@
+
+{
+  "Header": {
+    "taglineTop": "ESTUDIO DE",
+    "taglineBottom": "DISEÑO DE INTERIORES",
+    "mainNavigation": "Navegación principal",
+    "home": "Inicio de WONDER",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "studio": "El estudio",
+    "studies": "Estudios de interiores",
+    "materials": "Materiales",
+    "approach": "Nuestro enfoque",
+    "philosophy": "Filosofía",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "ariaLabel": "Presentación de WONDER",
+    "line1": "Espacios",
+    "line2": "que hablan",
+    "line3": "de ti.",
+    "description": "Interiores con carácter, pensados para tu forma de vivir.",
+    "startProject": "Hablemos",
+    "ourApproach": "Nuestro enfoque",
+    "imageAlt": "Salón contemporáneo con muebles escultóricos, piedra natural, madera oscura y vistas panorámicas",
+    "conceptStudy": "ESTUDIO CONCEPTUAL",
+    "imageMood": "COSTERO / MODERNO CÁLIDO"
+  },
+  "Services": {
+    "ariaLabel": "Servicios de WONDER",
+    "sectionLabel": "06 / QUÉ HACEMOS",
+    "sectionRight": "CUATRO SERVICIOS",
+    "headingLine1": "Servicios",
+    "headingLine2": "de WONDER.",
+    "intro": "Desde proyectos integrales de interiorismo hasta asesorías puntuales, cada servicio responde a una fase o necesidad diferente de tu proyecto.",
+    "materialsImageAlt": "Muestras seleccionadas de materiales y tejidos",
+    "interiorDesign": {
+      "title": "Diseño de interiores",
+      "short": "Conceptos integrales de interiorismo, desde la distribución hasta los detalles.",
+      "description": "Un concepto integral de diseño para una estancia o toda la vivienda. La distribución, la dirección estética, el mobiliario, los materiales y la iluminación se desarrollan como partes de un mismo conjunto. El resultado es una propuesta coherente, adaptada al espacio y a la forma de vivirlo.",
+      "feature1": "Concepto espacial y distribución",
+      "feature2": "Moodboards y dirección estética",
+      "feature3": "Mobiliario, acabados e iluminación"
+    },
+    "spacePlanning": {
+      "title": "Distribución espacial",
+      "short": "Distribuciones inteligentes para aprovechar mejor cada espacio.",
+      "description": "Un estudio centrado en mejorar el funcionamiento del espacio. Mediante la zonificación, la circulación y la disposición del mobiliario, WONDER desarrolla propuestas que favorecen la comodidad cotidiana y respetan las proporciones del interior.",
+      "feature1": "Opciones de distribución",
+      "feature2": "Zonificación funcional",
+      "feature3": "Distribución del mobiliario y circulación"
+    },
+    "furnitureMaterials": {
+      "title": "Mobiliario y materiales",
+      "short": "Una selección cuidada de mobiliario, acabados e iluminación.",
+      "description": "Para espacios cuya distribución ya está definida, WONDER reúne mobiliario, materiales, acabados e iluminación decorativa en una dirección estética coherente. El objetivo es crear equilibrio, textura y personalidad mediante combinaciones cuidadosamente elegidas.",
+      "feature1": "Paletas de materiales y acabados",
+      "feature2": "Selección de mobiliario",
+      "feature3": "Iluminación decorativa y detalles"
+    },
+    "designSupport": {
+      "title": "Asesoría de diseño",
+      "short": "Orientación profesional para tomar decisiones importantes.",
+      "description": "Asesoramiento puntual para proyectos que ya están en marcha. WONDER ayuda a revisar distribuciones, valorar opciones de materiales, resolver dudas de diseño y definir los siguientes pasos con recomendaciones prácticas.",
+      "feature1": "Consultas individuales",
+      "feature2": "Revisión de distribuciones y selecciones",
+      "feature3": "Recomendaciones de diseño"
+    }
+  },
+  "Studio": {
+    "sectionLabel": "01 / EL ESTUDIO",
+    "sectionRight": "NUESTRA VISIÓN",
+    "headingLine1": "Una visión clara.",
+    "headingLine2": "Un espacio propio.",
+    "lead": "Interiores contemporáneos definidos por composiciones cuidadas, materiales con textura y una personalidad marcada.",
+    "paragraph1": "WONDER es un estudio independiente de interiorismo con una mirada propia. Su enfoque parte de las proporciones, la luz natural y la relación entre los objetos y el espacio.",
+    "paragraph2": "En lugar de seguir tendencias o repetir fórmulas, WONDER explora el potencial de cada espacio desde una sensibilidad estética coherente, creando interiores singulares y personales.",
+    "servicesLink": "Descubre nuestros servicios"
+  },
+  "InteriorStudies": {
+    "sectionLabel": "02 / ESTUDIOS DE INTERIORISMO",
+    "sectionRight": "ESPACIO / LUZ / MATERIAL",
+    "headingLine1": "Distintas atmósferas.",
+    "headingLine2": "Una misma mirada.",
+    "intro": "Tener una mirada propia no significa repetir siempre el mismo estilo. El color, los materiales y la atmósfera responden a cada espacio, a su contexto y a quienes lo habitan.",
+    "viewImage": "VER IMAGEN",
+    "viewStudy": "Ver el estudio de interiorismo {title}",
+    "disclaimer": "ESTUDIOS DE INTERIORISMO — IMÁGENES CONCEPTUALES CREADAS PARA LA WEB DE WONDER. NO CORRESPONDEN A PROYECTOS REALIZADOS PARA CLIENTES.",
+    "studyDescriptor": "ESTUDIO DE INTERIORISMO",
+    "projects": {
+      "lightAtmosphere": {
+        "title": "Luz y atmósfera",
+        "alt": "Comedor contemporáneo con iluminación en capas y detalles de madera en tonos cálidos"
+      },
+      "formMaterial": {
+        "title": "Forma y material",
+        "alt": "Cocina contemporánea minimalista de líneas marcadas y una isla central escultórica"
+      },
+      "privacyCalm": {
+        "title": "Intimidad y calma",
+        "alt": "Dormitorio sereno con mobiliario cuidadosamente elegido, textiles suaves y luz natural filtrada"
+      }
+    },
+    "previewLabel": "Vista previa del estudio de interiorismo",
+    "close": "CERRAR",
+    "closeImage": "Cerrar imagen",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "modalDisclaimer": "ESTUDIO CONCEPTUAL DE INTERIORISMO — NO ES UN PROYECTO REALIZADO PARA UN CLIENTE"
+  },
+  "Approach": {
+    "sectionLabel": "04 / NUESTRO ENFOQUE",
+    "sectionRight": "DEL BRIEF AL DISEÑO",
+    "headingLine1": "De la idea",
+    "headingLine2": "al espacio.",
+    "intro": "Un proceso cuidado, desde comprender el espacio y definir su dirección hasta desarrollar los detalles que dan coherencia al diseño.",
+    "steps": {
+      "discover": {
+        "title": "Descubrir",
+        "body": "Conocer el espacio, sus posibilidades, las necesidades del proyecto y las prioridades del cliente."
+      },
+      "define": {
+        "title": "Definir",
+        "body": "Establecer el concepto espacial, las prioridades y una dirección estética clara."
+      },
+      "develop": {
+        "title": "Desarrollar",
+        "body": "Integrar materiales, mobiliario, iluminación y detalles en una propuesta coherente."
+      },
+      "refine": {
+        "title": "Perfeccionar",
+        "body": "Revisar decisiones, realizar los últimos ajustes y preparar los materiales de diseño acordados."
+      }
+    }
+  },
+  "Philosophy": {
+    "sectionLabel": "05 / FILOSOFÍA",
+    "headingLine1": "Pensado",
+    "headingLine2": "al detalle.",
+    "lead": "Un interior puede cautivar a primera vista y, aun así, seguir revelando matices. Un cambio de luz, una combinación inesperada o un detalle que se descubre con el tiempo son los momentos que dan profundidad a un espacio.",
+    "description": "Para WONDER, la curiosidad no consiste en añadir más, sino en ver más: descubrir las posibilidades que ya existen en un espacio y resaltarlas con claridad y mesura.",
+    "signature": "CURIOSIDAD / DETALLE / DESCUBRIMIENTO",
+    "imageAlt": "Comedor iluminado por el sol con sillones escultóricos de cuero, una gran lámpara de papel y una obra abstracta",
+    "servicesLinkLabel": "Descubrir los servicios de WONDER"
+  },
+  "Materials": {
+    "sectionLabel": "03 / MATERIALES Y DETALLES",
+    "sectionRight": "TEXTURA / LUZ / FORMA",
+    "eyebrow": "ATENCIÓN AL DETALLE",
+    "headingLine1": "Materiales",
+    "headingLine2": "y detalles.",
+    "lead": "Un interior se percibe tanto a través de sus detalles como del conjunto.",
+    "description": "La calidez de la madera, la presencia de la piedra, la forma en que la luz acaricia una superficie. Combinamos mobiliario, acabados y texturas para crear un interior donde cada elección aporta coherencia al conjunto.",
+    "servicesLink": "Explorar mobiliario y materiales",
+    "footnote": "ESTUDIOS DE MATERIALES / IMÁGENES CONCEPTUALES",
+    "galleryAria": "Galería de materiales y detalles",
+    "image1Alt": "Detalle de una tapicería de tejido bouclé, piedra natural y una mesa de centro escultórica bajo una suave luz de tarde",
+    "image1Caption": "01 / TEXTURA Y LUZ",
+    "image1Detail": "DETALLES QUE DEFINEN UN ESPACIO",
+    "image2Alt": "Detalle de piedra natural texturizada atravesada por la sombra de unas hojas",
+    "image2Caption": "02 / PIEDRA Y TEXTURA",
+    "image3Alt": "Selección de muestras de madera, tejidos y superficies en tonos naturales",
+    "image3Caption": "03 / PALETA DE MATERIALES"
+  },
+  "Contact": {
+    "sectionLabel": "07 / HABLEMOS DE TU PROYECTO",
+    "sectionRight": "WONDER / DISEÑO DE INTERIORES",
+    "headingLine1": "Hablemos",
+    "headingLine2": "de tu espacio.",
+    "intro": "Cuéntanos un poco sobre tu espacio, qué te gustaría crear o transformar y qué tipo de ayuda necesitas. Bastan unos pocos detalles para empezar.",
+    "whatsappButton": "Escribir por WhatsApp",
+    "telegramButton": "¿Prefieres Telegram?",
+    "whatsappMessage": "Hola, WONDER. Me gustaría hablar sobre un proyecto de diseño de interiores.",
+    "footerLeft": "UNA MIRADA PROPIA.",
+    "footerRight": "INTERIORES PARA LA VIDA DIARIA."
+  },
+  "Footer": {
+    "brandAria": "WONDER — volver arriba",
+    "tagline": "ESTUDIO DE DISEÑO DE INTERIORES CONTEMPORÁNEO",
+    "backToTop": "VOLVER ARRIBA",
+    "servicesLine": "DISEÑO DE INTERIORES · DISTRIBUCIÓN ESPACIAL · MOBILIARIO Y MATERIALES · ASESORÍA DE DISEÑO"
+  },
+  "Seo": {
+    "title": "WONDER — Estudio de diseño de interiores",
+    "description": "WONDER es un estudio independiente de interiorismo. Diseño de interiores, distribución de espacios, selección de mobiliario y materiales, y asesoría de diseño.",
+    "imageAlt": "Concepto de interiorismo contemporáneo de WONDER"
+  }
+}

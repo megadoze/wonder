@@ -1,6 +1,6 @@
 // All copy and project details are kept separate from the page UI for easy editing.
 export const navigation = [
-  { href: "#services", label: "Services" },
+  { href: "#service-details", label: "Services" },
   { href: "#work", label: "Spaces" },
   { href: "#approach", label: "Approach" },
   { href: "#studio", label: "Studio" },
@@ -9,6 +9,7 @@ export const navigation = [
 
 export const services = [
   {
+    id: "interiorDesign",
     title: "Interior Design",
     short:
       "Complete interior concepts, from spatial planning to the finest details.",
@@ -21,6 +22,7 @@ export const services = [
     ],
   },
   {
+    id: "spacePlanning",
     title: "Space Planning",
     short: "Intelligent layouts that make the most of every space.",
     description:
@@ -32,6 +34,7 @@ export const services = [
     ],
   },
   {
+    id: "furnitureMaterials",
     title: "Furniture & Materials",
     short: "Considered selections of furniture, finishes and lighting.",
     description:
@@ -43,6 +46,7 @@ export const services = [
     ],
   },
   {
+    id: "designSupport",
     title: "Design Support",
     short: "Focused design guidance for important decisions.",
     description:
@@ -57,6 +61,7 @@ export const services = [
 
 export const projects = [
   {
+    id: "lightAtmosphere",
     title: "Light & Atmosphere",
     descriptor: "INTERIOR STUDY",
     src: "/images/interior-study-light.webp",
@@ -65,6 +70,7 @@ export const projects = [
     height: 1024,
   },
   {
+    id: "formMaterial",
     title: "Form & Material",
     descriptor: "INTERIOR STUDY",
     src: "/images/interior-study-form.webp",
@@ -73,6 +79,7 @@ export const projects = [
     height: 1024,
   },
   {
+    id: "privacyCalm",
     title: "Privacy & Calm",
     descriptor: "INTERIOR STUDY",
     src: "/images/interior-study-calm.webp",

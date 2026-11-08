@@ -1,0 +1,189 @@
+
+{
+  "Header": {
+    "taglineTop": "CONTEMPORARY",
+    "taglineBottom": "INTERIOR DESIGN STUDIO",
+    "mainNavigation": "Main navigation",
+    "home": "WONDER home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "studio": "Studio",
+    "studies": "Interior Studies",
+    "materials": "Materials",
+    "approach": "Our Approach",
+    "philosophy": "Philosophy",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "ariaLabel": "WONDER introduction",
+    "line1": "Spaces",
+    "line2": "that feel",
+    "line3": "like you.",
+    "description": "Thoughtful interiors with character — shaped around the way you live.",
+    "startProject": "Start a project",
+    "ourApproach": "Our approach",
+    "imageAlt": "Contemporary living room with sculptural furniture, warm stone, dark wood and a wide landscape view",
+    "conceptStudy": "CONCEPT STUDY",
+    "imageMood": "COASTAL / WARM MODERN"
+  },
+  "Services": {
+    "ariaLabel": "WONDER services",
+    "sectionLabel": "06 / WHAT WE DO",
+    "sectionRight": "FOUR FOCUSED SERVICES",
+    "headingLine1": "Four ways to work",
+    "headingLine2": "with WONDER.",
+    "intro": "From complete interior concepts to focused design consultations, each service offers a considered approach to a different stage of your project.",
+    "materialsImageAlt": "Curated material and textile samples",
+    "interiorDesign": {
+      "title": "Interior Design",
+      "short": "Complete interior concepts, from spatial planning to the finest details.",
+      "description": "A comprehensive design concept for a room or an entire home. From spatial organisation and visual direction to furniture, materials and lighting, each element is developed as part of a cohesive interior. The result is a clear design direction shaped by the space and the way it will be lived in.",
+      "feature1": "Spatial concept & layouts",
+      "feature2": "Moodboards & visual direction",
+      "feature3": "Furniture, finishes & lighting"
+    },
+    "spacePlanning": {
+      "title": "Space Planning",
+      "short": "Intelligent layouts that make the most of every space.",
+      "description": "A focused exploration of how a space can work better. Through thoughtful zoning, circulation and furniture placement, WONDER develops layout solutions that improve everyday function while respecting the proportions and character of the interior.",
+      "feature1": "Layout options",
+      "feature2": "Functional zoning",
+      "feature3": "Furniture placement & circulation"
+    },
+    "furnitureMaterials": {
+      "title": "Furniture & Materials",
+      "short": "Considered selections of furniture, finishes and lighting.",
+      "description": "For spaces where the layout is already established, WONDER brings together furniture, materials, finishes and decorative lighting into a consistent visual direction. The focus is on creating balance, texture and character through carefully considered combinations.",
+      "feature1": "Material & finish palettes",
+      "feature2": "Furniture selection",
+      "feature3": "Decorative lighting & details"
+    },
+    "designSupport": {
+      "title": "Design Support",
+      "short": "Focused design guidance for important decisions.",
+      "description": "Targeted design consultations for projects already taking shape. Whether reviewing a layout, considering material options or resolving a particular design challenge, WONDER provides an independent perspective and practical recommendations to help move the project forward with confidence.",
+      "feature1": "Individual consultations",
+      "feature2": "Review of layouts & selections",
+      "feature3": "Design recommendations"
+    }
+  },
+  "Studio": {
+    "sectionLabel": "01 / THE STUDIO",
+    "sectionRight": "OUR POINT OF VIEW",
+    "headingLine1": "A clear vision.",
+    "headingLine2": "A personal space.",
+    "lead": "Contemporary interiors shaped by thoughtful composition, tactile materials and a strong sense of character.",
+    "paragraph1": "WONDER is an independent interior design studio with a distinct point of view. The approach is guided by proportion, natural light and the relationship between objects and space.",
+    "paragraph2": "Rather than following trends or repeating formulas, WONDER explores the individual potential of each space through a consistent design sensibility — creating interiors that feel both distinctive and personal.",
+    "servicesLink": "Explore our services"
+  },
+  "InteriorStudies": {
+    "sectionLabel": "02 / INTERIOR STUDIES",
+    "sectionRight": "A STUDY IN SPACE, LIGHT & MATERIAL",
+    "headingLine1": "Different moods.",
+    "headingLine2": "One point of view.",
+    "intro": "One point of view does not mean one look. We shape colour, material and atmosphere around the person, the place and the way the space should feel.",
+    "viewImage": "VIEW IMAGE",
+    "viewStudy": "View {title} interior study",
+    "disclaimer": "INTERIOR STUDIES — CONCEPTUAL IMAGERY CREATED FOR THE WONDER WEBSITE. NOT COMPLETED CLIENT PROJECTS.",
+    "studyDescriptor": "INTERIOR STUDY",
+    "projects": {
+      "lightAtmosphere": {
+        "title": "Light & Atmosphere",
+        "alt": "Contemporary dining interior with layered lighting and warm wood details"
+      },
+      "formMaterial": {
+        "title": "Form & Material",
+        "alt": "Minimal contemporary kitchen with strong lines and a sculptural central island"
+      },
+      "privacyCalm": {
+        "title": "Privacy & Calm",
+        "alt": "Peaceful bedroom with thoughtful furniture, soft textiles, and filtered natural daylight"
+      }
+    },
+    "previewLabel": "Interior image preview",
+    "close": "CLOSE",
+    "closeImage": "Close image",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "modalDisclaimer": "CONCEPTUAL INTERIOR STUDY — NOT A COMPLETED COMMISSION"
+  },
+  "Approach": {
+    "sectionLabel": "04 / OUR APPROACH",
+    "sectionRight": "FROM BRIEF TO DESIGN",
+    "headingLine1": "How an idea",
+    "headingLine2": "takes shape.",
+    "intro": "A considered process, from understanding the space and defining its direction to developing the details that bring the design together.",
+    "steps": {
+      "discover": {
+        "title": "Discover",
+        "body": "Understanding the space, its possibilities, the project brief and what matters most."
+      },
+      "define": {
+        "title": "Define",
+        "body": "Establishing the spatial concept, key priorities and a clear visual direction."
+      },
+      "develop": {
+        "title": "Develop",
+        "body": "Bringing together materials, furniture, lighting and details into a coherent design."
+      },
+      "refine": {
+        "title": "Refine",
+        "body": "Reviewing decisions, making final adjustments and preparing the agreed design materials."
+      }
+    }
+  },
+  "Philosophy": {
+    "sectionLabel": "05 / PHILOSOPHY",
+    "headingLine1": "Thoughtful by",
+    "headingLine2": "design.",
+    "lead": "An interior can be beautiful at first glance and still have more to reveal. A change in light, an unexpected pairing, a detail discovered over time — these are the moments that give a space depth.",
+    "description": "For WONDER, curiosity is not about adding more. It is about seeing more: finding the possibilities already present in a room and bringing them into focus with clarity and restraint.",
+    "signature": "CURIOSITY / DETAIL / DISCOVERY",
+    "imageAlt": "Sunlit dining room with sculptural leather chairs, a large paper lantern and abstract artwork",
+    "servicesLinkLabel": "Explore WONDER services"
+  },
+  "Materials": {
+    "sectionLabel": "03 / MATERIALS & DETAILS",
+    "sectionRight": "TEXTURE / LIGHT / FORM",
+    "eyebrow": "AN EYE FOR THE DETAILS",
+    "headingLine1": "Materials",
+    "headingLine2": "& Details.",
+    "lead": "A room is experienced through the details as much as the whole.",
+    "description": "The warmth of timber, the weight of stone, the way light meets a surface. We bring furniture, finishes and textures together so every choice contributes to a coherent interior.",
+    "servicesLink": "Explore Furniture & Materials",
+    "footnote": "MATERIAL STUDIES / CONCEPT IMAGERY",
+    "galleryAria": "Material and detail studies",
+    "image1Alt": "Detail of warm bouclé upholstery, natural stone and a sculptural coffee table in soft afternoon light",
+    "image1Caption": "01 / TEXTURE & LIGHT",
+    "image1Detail": "THE DETAILS THAT DEFINE A SPACE",
+    "image2Alt": "Close detail of textured natural stone crossed by a leafy shadow",
+    "image2Caption": "02 / STONE & TEXTURE",
+    "image3Alt": "Selection of timber, woven textile and tactile surface samples in natural colours",
+    "image3Caption": "03 / MATERIAL PALETTE"
+  },
+  "Contact": {
+    "sectionLabel": "07 / START A CONVERSATION",
+    "sectionRight": "WONDER / INTERIOR DESIGN",
+    "headingLine1": "Let’s begin",
+    "headingLine2": "with your space.",
+    "intro": "Tell us a little about your space, what you are hoping to create and the kind of design support you need. A few details are enough to begin.",
+    "whatsappButton": "Chat on WhatsApp",
+    "telegramButton": "Prefer Telegram?",
+    "whatsappMessage": "Hello WONDER, I'd like to discuss an interior design project.",
+    "footerLeft": "PERSONAL BY DESIGN.",
+    "footerRight": "INTERIORS FOR EVERYDAY LIFE."
+  },
+  "Footer": {
+    "brandAria": "WONDER — back to top",
+    "tagline": "CONTEMPORARY INTERIOR DESIGN STUDIO",
+    "backToTop": "BACK TO TOP",
+    "servicesLine": "INTERIOR DESIGN · SPACE PLANNING · FURNITURE & MATERIALS · DESIGN SUPPORT"
+  },
+  "Seo": {
+    "title": "WONDER — Interior Design Studio",
+    "description": "Thoughtful interiors with character. Explore interior design, space planning, furniture and material selection, and design consultations by WONDER.",
+    "imageAlt": "Contemporary interior design concept by WONDER"
+  }
+}

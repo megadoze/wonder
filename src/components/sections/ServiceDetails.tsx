@@ -1,35 +1,43 @@
+
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { SectionRule } from "@/components/ui/SectionRule";
 import { useExperience } from "@/components/ui/ExperienceProvider";
 import { formatIndex, services } from "@/data/content";
 
 export function ServiceDetails() {
   const { expandedService, toggleService } = useExperience();
+  const t = useTranslations("Services");
+
   return (
     <section
       id="service-details"
       className="bg-paper px-[4.5%] pt-[72px] pb-[85px] max-md:px-5 max-md:py-16"
     >
-      <SectionRule left="06 / WHAT WE DO" right="FOUR FOCUSED SERVICES" />
+      <SectionRule
+        left={t("sectionLabel")}
+        right={t("sectionRight")}
+      />
+
       <div className="grid grid-cols-[.8fr_1.2fr] gap-[8vw] pt-[66px] max-lg:md:grid-cols-[1fr_1.25fr] max-md:grid-cols-1 max-md:pt-12">
         <div>
           <h2 className="mb-[26px] font-editorial text-[clamp(53px,5vw,82px)] leading-[.92] tracking-[-.035em] max-md:text-[clamp(50px,13vw,70px)]">
-            Four ways to work
+            {t("headingLine1")}
             <br />
-            <em className="font-normal text-[#5d675f]">with WONDER.</em>
+            <em className="font-normal text-[#5d675f]">
+              {t("headingLine2")}
+            </em>
           </h2>
 
           <p className="max-w-[390px] text-sm leading-[1.7] text-[#626760]">
-            From complete interior concepts to focused design consultations,
-            each service offers a considered approach to a different stage of
-            your project.
+            {t("intro")}
           </p>
 
           <div className="relative mt-[45px] h-[185px] w-[70%] max-md:h-[170px] max-md:w-[62%]">
             <Image
-              alt="Curated material and textile samples"
+              alt={t("materialsImageAlt")}
               src="/images/material-palette.webp"
               fill
               sizes="(max-width: 780px) 65vw, 30vw"
@@ -37,17 +45,18 @@ export function ServiceDetails() {
             />
           </div>
         </div>
+
         <div className="border-t border-[#bfc1b9]">
           {services.map((service, index) => (
             <details
-              key={service.title}
+              key={service.id}
               open={expandedService === index}
               className="group border-b border-[#bfc1b9] open:bg-white/[.18]"
             >
               <summary
                 data-service-summary={index}
                 aria-expanded={expandedService === index}
-                className="grid cursor-pointer grid-cols-[42px_1fr_30px] items-center gap-3 pl-[22px] pr-[6px] py-[25px] max-md:px-0"
+                className="grid cursor-pointer grid-cols-[42px_minmax(0,1fr)_30px] items-center gap-3 py-[25px] pl-[22px] pr-[6px] max-md:px-0"
                 onClick={(event) => {
                   event.preventDefault();
                   toggleService(index);
@@ -56,9 +65,11 @@ export function ServiceDetails() {
                 <span className="text-[10px] text-[#777b74]">
                   {formatIndex(index)}
                 </span>
-                <b className="font-editorial text-[32px] font-normal tracking-[-.02em] max-md:text-[27px]">
-                  {service.title}
+
+                <b className="min-w-0 font-editorial text-[32px] font-normal tracking-[-.02em] max-md:text-[27px]">
+                  {t(`${service.id}.title`)}
                 </b>
+
                 <span
                   aria-hidden="true"
                   className="grid h-[30px] w-[30px] shrink-0 place-items-center"
@@ -70,19 +81,19 @@ export function ServiceDetails() {
                 </span>
               </summary>
 
-              <div className="grid grid-cols-[42px_minmax(0,1fr)_30px] gap-3 pl-[22px] pr-[6px] pb-[32px] max-md:px-0">
+              <div className="grid grid-cols-[42px_minmax(0,1fr)_30px] gap-3 pb-[32px] pl-[22px] pr-[6px] max-md:px-0">
                 <div className="col-start-2 min-w-0">
                   <p className="max-w-[530px] text-[13px] leading-[1.8] text-[#5f645d]">
-                    {service.description}
+                    {t(`${service.id}.description`)}
                   </p>
 
                   <ul className="mt-[22px] flex list-none flex-wrap gap-2">
-                    {service.features.map((feature) => (
+                    {([1, 2, 3] as const).map((number) => (
                       <li
-                        key={feature}
+                        key={number}
                         className="border border-[#c5c7bf] px-3 py-2 text-[10px] leading-[1.5] text-[#60645e]"
                       >
-                        {feature}
+                        {t(`${service.id}.feature${number}`)}
                       </li>
                     ))}
                   </ul>
