@@ -41,9 +41,10 @@ export function LanguageSwitcher({ className = "" }: LanguageSwitcherProps) {
               </span>
             ) : (
               <Link
-                href={pathname}
+                href={`${pathname}#top`}
                 locale={locale}
                 hrefLang={locale}
+                scroll={true}
                 aria-label={`Switch language to ${languageNames[locale]}`}
                 className="opacity-45 transition-opacity duration-200 hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-4"
               >

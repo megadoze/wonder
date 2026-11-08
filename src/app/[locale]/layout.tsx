@@ -1,10 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+
 import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+
+import { getMessages, getTranslations } from "next-intl/server";
+
 import { notFound } from "next/navigation";
 
-import { getTranslations } from "next-intl/server";
+import {
+  indexedLocales,
+  getLanguageAlternates,
+  getLocaleUrl,
+  siteUrl,
+} from "@/lib/seo";
 
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -13,11 +21,6 @@ type LocaleLayoutProps = Readonly<{
   children: ReactNode;
   params: Promise<{ locale: string }>;
 }>;
-
-const siteTitle = "WONDER — Interior Design Studio";
-
-const siteDescription =
-  "Thoughtful interiors with character — shaped around the way you live. Interior Design, Space Planning, Furniture & Materials, and Design Support.";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -46,18 +49,16 @@ export async function generateMetadata({
     namespace: "Seo",
   });
 
-  const path = locale === routing.defaultLocale ? "/" : `/${locale}`;
-
-  const siteUrl = process.env.SITE_URL ?? "https://wonder.archi";
-
-  const ogLocales = {
+  const ogLocales: Record<string, string> = {
     en: "en_GB",
     ru: "ru_RU",
     uk: "uk_UA",
     es: "es_ES",
   };
 
-  const isPublishedLanguage = locale === "en";
+  const isPublishedLanguage = indexedLocales.includes(locale);
+
+  const canonicalUrl = getLocaleUrl(locale);
 
   return {
     metadataBase: new URL(siteUrl),
@@ -67,7 +68,16 @@ export async function generateMetadata({
     applicationName: "WONDER",
 
     alternates: {
-      canonical: path,
+      canonical: canonicalUrl,
+
+      ...(indexedLocales.length > 1
+        ? {
+            languages: {
+              ...getLanguageAlternates(),
+              "x-default": getLocaleUrl("en"),
+            },
+          }
+        : {}),
     },
 
     robots: {
@@ -80,7 +90,7 @@ export async function generateMetadata({
       description: t("description"),
       siteName: "WONDER",
       type: "website",
-      url: path,
+      url: canonicalUrl,
       locale: ogLocales[locale],
       images: [
         {
@@ -101,8 +111,6 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
-  setRequestLocale(locale);
 
   const messages = await getMessages();
 

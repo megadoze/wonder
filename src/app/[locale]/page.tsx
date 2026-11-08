@@ -1,5 +1,3 @@
-
-import { setRequestLocale } from "next-intl/server";
 import { ExperienceProvider } from "@/components/ui/ExperienceProvider";
 
 import { Header } from "@/components/layout/Header";
@@ -15,17 +13,7 @@ import { Philosophy } from "@/components/sections/Philosophy";
 import { ServiceDetails } from "@/components/sections/ServiceDetails";
 import { Contact } from "@/components/sections/Contact";
 
-type HomePageProps = {
-  params: Promise<{ locale: string }>;
-};
-
-export default async function HomePage({
-  params,
-}: HomePageProps) {
-  const { locale } = await params;
-
-  setRequestLocale(locale);
-
+export default function HomePage() {
   return (
     <ExperienceProvider>
       <a
@@ -35,6 +23,7 @@ export default async function HomePage({
         Skip to content
       </a>
 
+      <div id="top" aria-hidden="true" />
       <Header />
 
       <main id="main">

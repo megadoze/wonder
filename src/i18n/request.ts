@@ -1,13 +1,16 @@
-import { getRequestConfig } from "next-intl/server";
+import { locale as getRootLocale } from "next/root-params";
 import { hasLocale } from "next-intl";
+import { getRequestConfig } from "next-intl/server";
+import { notFound } from "next/navigation";
+
 import { routing } from "./routing";
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  const requestedLocale = await requestLocale;
+export default getRequestConfig(async ({ locale: overrideLocale }) => {
+  const locale = overrideLocale ?? (await getRootLocale());
 
-  const locale = hasLocale(routing.locales, requestedLocale)
-    ? requestedLocale
-    : routing.defaultLocale;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
   return {
     locale,
