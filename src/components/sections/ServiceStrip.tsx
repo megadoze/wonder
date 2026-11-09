@@ -12,7 +12,7 @@ export function ServiceStrip() {
     <section
       aria-label={t("ariaLabel")}
       id="services"
-      className="grid grid-cols-4 bg-footer/90 px-[3.2%] pt-[12px] pb-[9px] text-[#f4f1e9] max-[1199px]:grid-cols-2 max-md:grid-cols-1 max-md:px-5 max-md:py-3"
+      className="grid grid-cols-4 bg-footer px-[3.2%] pt-[12px] pb-[9px] text-[#f4f1e9] max-[1199px]:grid-cols-2 max-md:grid-cols-1 max-md:px-5 max-md:py-3"
     >
       {services.map((service, index) => (
         <button
