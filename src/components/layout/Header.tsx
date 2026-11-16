@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 
 import { navigation } from "@/data/content";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
-import type { MouseEvent } from "react";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,50 +47,6 @@ export function Header() {
     unlockScroll();
     setMenuOpen(false);
   }, [unlockScroll]);
-
-  const handleMobileNavClick = (
-    event: MouseEvent<HTMLAnchorElement>,
-    href: string,
-  ) => {
-    if (
-      event.button !== 0 ||
-      event.metaKey ||
-      event.ctrlKey ||
-      event.shiftKey ||
-      event.altKey
-    ) {
-      return;
-    }
-
-    event.preventDefault();
-
-    // First unlock scrolling and close the menu.
-    closeMenu();
-
-    // Wait for the menu to update before scrolling.
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        const target = document.getElementById(href.replace(/^#/, ""));
-
-        if (!target) return;
-
-        // Calculate the exact top of the section.
-        const top = window.scrollY + target.getBoundingClientRect().top;
-
-        const reduceMotion = window.matchMedia(
-          "(prefers-reduced-motion: reduce)",
-        ).matches;
-
-        // Keep the URL hash.
-        window.history.pushState(null, "", href);
-
-        window.scrollTo({
-          top: Math.max(0, top),
-          behavior: reduceMotion ? "instant" : "smooth",
-        });
-      });
-    });
-  };
 
   // Close mobile menu when switching to desktop.
   useEffect(() => {
@@ -275,7 +230,7 @@ export function Header() {
                 key={item.href}
                 ref={index === 0 ? firstLinkRef : undefined}
                 href={item.href}
-                onClick={(event) => handleMobileNavClick(event, item.href)}
+                onClick={closeMenu}
                 className="group flex items-center justify-between gap-4 border-b border-[#d0cec7] py-[18px] font-sans text-[clamp(24px,7vw,34px)] font-light leading-[1.1] tracking-[-.025em] text-[#232722] transition-colors duration-200 hover:text-[#657466] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-forest"
               >
                 <span>{navLabels[item.href] ?? item.label}</span>
