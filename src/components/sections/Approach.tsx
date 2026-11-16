@@ -38,7 +38,7 @@ export function Approach() {
               className="group flex min-h-[205px] flex-col border-r border-b border-wonder-line px-7 pt-7 pb-8 transition-colors duration-300 hover:bg-white/30 max-md:min-h-0 max-md:py-7"
             >
               <div className="flex items-center justify-between">
-                <span className="text-[10px] tracking-[.14em] text-[#7a7e78]">
+                <span className="text-[14px] tracking-[.14em] text-[#7a7e78]">
                   {formatIndex(index)}
                 </span>
 
