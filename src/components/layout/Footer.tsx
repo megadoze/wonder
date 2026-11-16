@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
 export function Footer() {
@@ -12,9 +12,16 @@ export function Footer() {
         <a
           href="#top"
           aria-label={t("brandAria")}
-          className="whitespace-nowrap text-[clamp(55px,17.7vw,134px)] leading-[.9] font-semibold tracking-[-.095em] md:text-[13vw] lg:text-[clamp(95px,13.55vw,216px)]"
+          className="block min-w-0 flex-1 max-md:w-full max-md:flex-none"
         >
-          WONDER
+          <Image
+            src="/images/wonder-wordmark-light.svg"
+            alt=""
+            width={1510}
+            height={246}
+            unoptimized
+            className="block h-auto w-full max-w-[800px]"
+          />
         </a>
 
         {/* Studio information */}

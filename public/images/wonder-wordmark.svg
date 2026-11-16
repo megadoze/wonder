@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1510" height="246" viewBox="0 0 1510 246" role="img" aria-label="WONDER wordmark"><g fill="#30362f">
+  <path d="M 79.28,141.21 L 183.33,386.48 L 257.65,210.58 L 260.13,213.06 L 333.63,386.48 L 434.37,142.04 L 426.12,141.21 L 363.35,297.29 L 346.01,336.93 L 263.43,141.21 L 229.57,141.21 L 254.35,199.85 L 196.54,336.93 L 113.14,141.21 Z" transform="translate(-79.28 -141.21)"/>
+  <!-- O: high-contrast rounded geometry, not uniform sans-serif -->
+  <path fill-rule="evenodd" d="M 493 0 C 552 0 597 53 597 123 C 597 193 552 246 493 246 C 433 246 388 193 388 123 C 388 53 433 0 493 0 Z M 493 10 C 449 10 419 57 419 123 C 419 189 449 236 493 236 C 537 236 566 189 566 123 C 566 57 537 10 493 10 Z"/>
+  <!-- N: contrasting thick diagonal / fine uprights -->
+  <path d="M 632 246 L632 0 L664 0 L 801 197 L801 0 L812 0 L812 246 L780 246 L643 49 L643 246 Z"/>
+  <!-- D: bold upright and outer arc, thin terminal horizontals -->
+  <path fill-rule="evenodd" d="M 850 0 H 934 C 1014 0 1060 48 1060 123 C 1060 198 1014 246 934 246 H 850 Z M 883 11 V235 H934 C994 235 1028 194 1028 123 C1028 52 994 11 934 11 Z"/>
+  <!-- E: structural thick vertical and fine horizontal lines -->
+  <path d="M 1095 0 H 1261 V 11 H1128 V117 H1241 V127 H1128 V235 H1261 V246 H1095 Z"/>
+  <!-- R: structural thick stem, high-contrast bowl, purposeful leg -->
+  <path fill-rule="evenodd" d="M 1296 0 H 1394 C 1453 0 1487 27 1487 70 C1487 112 1456 137 1411 139 L 1500 246 H 1461 L1367 137 H 1329 V 246 H1296 Z M1329 11 V126 H1394 C1436 126 1455 107 1455 70 C1455 31 1436 11 1394 11 Z"/>
+</g></svg>

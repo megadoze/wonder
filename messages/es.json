@@ -1,5 +1,8 @@
 
 {
+  "Accessibility": {
+    "skipToContent": "Ir al contenido"
+  },
   "Header": {
     "taglineTop": "ESTUDIO DE",
     "taglineBottom": "DISEÑO DE INTERIORES",

@@ -1,5 +1,5 @@
+import { useTranslations } from "next-intl";
 import { ExperienceProvider } from "@/components/ui/ExperienceProvider";
-
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
@@ -14,16 +14,16 @@ import { ServiceDetails } from "@/components/sections/ServiceDetails";
 import { Contact } from "@/components/sections/Contact";
 
 export default function HomePage() {
+  const t = useTranslations("Accessibility");
   return (
     <ExperienceProvider>
       <a
-        className="sr-only fixed top-3 left-3 z-[100] bg-white px-4 py-3 focus:not-sr-only"
         href="#main"
+        className="sr-only fixed top-3 left-3 z-[100] rounded-sm bg-[#30362f] px-5 py-3 text-sm font-medium text-white shadow-lg focus:not-sr-only focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c2c9bb]"
       >
-        Skip to content
+        {t("skipToContent")}
       </a>
 
-      <div id="top" aria-hidden="true" />
       <Header />
 
       <main id="main">

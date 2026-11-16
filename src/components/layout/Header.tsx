@@ -1,10 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+
 import { navigation } from "@/data/content";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
-
-import { useTranslations } from "next-intl";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,12 +54,16 @@ export function Header() {
     >
       {/* Brand */}
       <div className="pointer-events-auto flex min-w-0 items-center gap-5 max-md:gap-3 md:max-lg:gap-3">
-        <a
-          href="#top"
-          aria-label={t("home")}
-          className="shrink-0 text-[30px] font-[520] tracking-[-.045em] max-md:text-[27px]"
-        >
-          WONDER
+        <a href="#top" aria-label={t("home")} className="block shrink-0">
+          <Image
+            src="/images/wonder-wordmark.svg"
+            alt=""
+            width={1510}
+            height={246}
+            unoptimized
+            priority
+            className="block h-auto w-[126px] sm:w-[142px] md:w-[122px] lg:w-[164px] xl:w-[176px]"
+          />
         </a>
 
         <span className="shrink-0 pt-0.5 text-[9px] leading-[1.45] tracking-[.14em] text-[#676963] max-md:text-[7px] max-md:tracking-[.08em] md:max-lg:text-[7px] md:max-lg:tracking-[.08em]">
@@ -114,8 +119,7 @@ export function Header() {
           </a>
         ))}
 
-        {/* Language selector */}
-
+        {/* Mobile language selector */}
         <div className="shrink-0 border-t border-[#d0cec7] pt-6 pl-0 md:hidden max-md:mt-6">
           <LanguageSwitcher className="text-[12px]" />
         </div>

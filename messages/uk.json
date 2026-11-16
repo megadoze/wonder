@@ -1,5 +1,8 @@
 
 {
+  "Accessibility": {
+    "skipToContent": "Перейти до вмісту"
+  },
   "Header": {
     "taglineTop": "СУЧАСНА",
     "taglineBottom": "СТУДІЯ ДИЗАЙНУ ІНТЕР’ЄРІВ",
