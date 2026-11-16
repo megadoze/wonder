@@ -59,7 +59,6 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -138,5 +137,29 @@ details > summary::-webkit-details-marker {
 
   .hero-image-reveal {
     animation: wonderHeroImage 1100ms ease-out both;
+  }
+}
+
+/* HERO — faster entrance on mobile */
+
+@media (max-width: 780px) and (prefers-reduced-motion: no-preference) {
+  .hero-reveal {
+    animation-duration: 550ms;
+  }
+
+  .hero-delay-1 {
+    animation-delay: 0ms;
+  }
+
+  .hero-delay-4 {
+    animation-delay: 140ms;
+  }
+
+  .hero-delay-5 {
+    animation-delay: 260ms;
+  }
+
+  .hero-image-reveal {
+    animation-duration: 850ms;
   }
 }
