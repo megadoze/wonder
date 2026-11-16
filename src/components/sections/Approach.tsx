@@ -26,7 +26,7 @@ export function Approach() {
             <em className="font-normal text-[#5d675f]">{t("headingLine2")}</em>
           </h2>
 
-          <p className="max-w-[420px] text-sm md:text-[15px] leading-[1.75] text-[#626760]">
+          <p className="max-w-[420px] text-[15px] leading-[1.75] text-[#626760]">
             {t("intro")}
           </p>
         </div>

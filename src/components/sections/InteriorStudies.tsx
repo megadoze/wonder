@@ -32,7 +32,7 @@ export function InteriorStudies() {
           <em className="font-normal text-[#c6c9be]">{t("headingLine2")}</em>
         </h2>
 
-        <p className="mb-[5px] max-w-[310px] text-[15px] leading-[1.75] text-[#c5c9c0] max-md:max-w-[450px] max-md:text-[14px]">
+        <p className="mb-[5px] max-w-[310px] text-[15px] leading-[1.75] text-[#c5c9c0] max-md:max-w-[450px]">
           {t("intro")}
         </p>
       </div>
@@ -99,7 +99,7 @@ export function InteriorStudies() {
             </button>
 
             {/* Image caption */}
-            <figcaption className="mt-[17px] flex items-center justify-between gap-4 text-[9px] leading-[1.6] font-medium tracking-[.12em] text-[#d0d2c9] max-md:mt-[13px] max-md:text-[8px]">
+            <figcaption className="mt-[17px] flex items-center justify-between gap-4 text-[11px] leading-[1.6] font-medium tracking-[.12em] text-[#d0d2c9] max-md:mt-[13px] max-md:text-[10px]">
               <span>
                 {formatIndex(index)} / {project.title.toUpperCase()}
               </span>
