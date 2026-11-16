@@ -10,7 +10,7 @@ export function Hero() {
       className="grid min-h-[720px] grid-cols-[37%_63%] bg-paper-soft min-[1920px]:min-h-[clamp(820px,40vw,1100px)] max-lg:md:grid-cols-[38%_62%] max-md:grid-cols-1"
     >
       <div className="flex min-w-0 flex-col pt-[108px] pr-[7.2%] pb-7 pl-[14%] max-lg:md:pr-[7%] max-lg:md:pl-[9%] max-md:min-h-0 max-md:px-5 max-md:pt-[80px] max-md:pb-[64px]">
-        <h1 className="pt-5 max-w-[560px] font-editorial text-[clamp(74px,7.2vw,128px)] leading-[.78] tracking-[-.052em] max-lg:md:text-[clamp(70px,8.2vw,105px)] max-md:text-[clamp(70px,18.8vw,102px)] max-[360px]:text-[65px]">
+        <h1 className="pt-10 max-w-[560px] font-editorial text-[clamp(74px,7.2vw,128px)] leading-[.78] tracking-[-.052em] max-lg:md:text-[clamp(70px,8.2vw,105px)] max-md:text-[clamp(70px,18.8vw,102px)] max-[360px]:text-[65px]">
           {t("line1")}
           <br />
           <em className="font-normal text-[#5d675f]">{t("line2")}</em>

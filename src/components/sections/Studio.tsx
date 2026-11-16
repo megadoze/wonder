@@ -8,7 +8,7 @@ export function Studio() {
     <section
       aria-labelledby="studio-heading"
       id="studio"
-      className="bg-paper-soft px-[4.5%] pt-[75px] pb-[82px] max-md:px-5 max-md:pt-[55px] max-md:pb-[72px]"
+      className="bg-paper-soft px-[4.5%] pt-[50px] pb-[82px] max-md:px-5 max-md:pt-[55px] max-md:pb-[72px]"
     >
       <div className="flex items-center justify-between gap-6 border-b border-wonder-line pb-[21px] text-[9px] leading-[1.5] font-medium tracking-[.145em] text-[#555a54] max-md:text-[8px]">
         <span>{t("sectionLabel")}</span>

@@ -31,9 +31,9 @@ export default function HomePage() {
         <div className="relative">
           <Hero />
 
-          <div className="min-[1200px]:absolute min-[1200px]:inset-x-0 min-[1200px]:bottom-0 min-[1200px]:z-10">
+          {/* <div className="min-[1200px]:absolute min-[1200px]:inset-x-0 min-[1200px]:bottom-0 min-[1200px]:z-10">
             <ServiceStrip />
-          </div>
+          </div> */}
         </div>
 
         {/* STUDIO */}
