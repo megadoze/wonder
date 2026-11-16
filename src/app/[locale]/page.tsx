@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 import { Hero } from "@/components/sections/Hero";
-import { ServiceStrip } from "@/components/sections/ServiceStrip";
+// import { ServiceStrip } from "@/components/sections/ServiceStrip";
 import { Studio } from "@/components/sections/Studio";
 import { InteriorStudies } from "@/components/sections/InteriorStudies";
 import { Materials } from "@/components/sections/Materials";
@@ -12,6 +12,7 @@ import { Approach } from "@/components/sections/Approach";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { ServiceDetails } from "@/components/sections/ServiceDetails";
 import { Contact } from "@/components/sections/Contact";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export default function HomePage() {
   const t = useTranslations("Accessibility");
@@ -27,14 +28,16 @@ export default function HomePage() {
       <Header />
 
       <main id="main">
-        {/* HERO + SERVICE STRIP */}
-        <div className="relative">
-          <Hero />
+        <ScrollReveal />
 
-          {/* <div className="min-[1200px]:absolute min-[1200px]:inset-x-0 min-[1200px]:bottom-0 min-[1200px]:z-10">
+        {/* HERO + SERVICE STRIP */}
+        {/* <div className="relative"> */}
+        <Hero />
+
+        {/* <div className="min-[1200px]:absolute min-[1200px]:inset-x-0 min-[1200px]:bottom-0 min-[1200px]:z-10">
             <ServiceStrip />
           </div> */}
-        </div>
+        {/* </div> */}
 
         {/* STUDIO */}
         <Studio />
