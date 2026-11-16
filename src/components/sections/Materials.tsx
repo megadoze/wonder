@@ -93,9 +93,9 @@ export function Materials() {
               className="object-cover object-[53%_50%] transition-transform duration-700 group-hover:scale-[1.026]"
             />
 
-            <figcaption className="absolute inset-x-0 bottom-0 z-10 flex justify-between gap-4 bg-gradient-to-t from-black/45 to-transparent px-[18px] py-[17px] text-[9px] tracking-[.1em] text-white max-md:px-[13px] max-md:text-[8px] max-[360px]:px-2.5 max-[360px]:text-[7px]">
+            <figcaption className="absolute inset-x-0 bottom-0 z-10 flex justify-between gap-4 bg-gradient-to-t from-black/45 to-transparent px-[18px] py-[17px] text-[11px] tracking-[.1em] text-white max-md:px-[13px] max-md:text-[10px] max-[360px]:px-2.5 max-[360px]:text-[7px]">
               <span>{t("image1Caption")}</span>
-              <span className="text-right text-[8px] opacity-80 max-lg:hidden">
+              <span className="text-right text-[11px] opacity-80 max-lg:hidden">
                 {t("image1Detail")}
               </span>
             </figcaption>
@@ -112,7 +112,7 @@ export function Materials() {
                 className="object-cover object-[48%_50%] transition-transform duration-700 group-hover:scale-[1.026]"
               />
 
-              <figcaption className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/45 to-transparent px-[18px] py-[17px] text-[9px] tracking-[.1em] text-white max-md:p-[13px] max-md:text-[8px]">
+              <figcaption className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/45 to-transparent px-[18px] py-[17px] text-[11px] tracking-[.1em] text-white max-md:p-[13px] max-md:text-[10px]">
                 {t("image2Caption")}
               </figcaption>
             </figure>
@@ -126,7 +126,7 @@ export function Materials() {
                 className="object-cover object-[50%_45%] transition-transform duration-700 group-hover:scale-[1.026]"
               />
 
-              <figcaption className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/45 to-transparent px-[18px] py-[17px] text-[9px] tracking-[.1em] text-white max-md:p-[13px] max-md:text-[8px]">
+              <figcaption className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/45 to-transparent px-[18px] py-[17px] text-[11px] tracking-[.1em] text-white max-md:p-[13px] max-md:text-[10px]">
                 {t("image3Caption")}
               </figcaption>
             </figure>

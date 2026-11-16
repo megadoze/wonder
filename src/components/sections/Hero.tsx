@@ -78,7 +78,7 @@ export function Hero() {
           sizes="(max-width: 780px) 100vw, 67vw"
           className="object-cover object-[52%_50%]"
         />
-        <div className="absolute right-[4.5%] bottom-[27px] min-[1200px]:bottom-[160px] flex gap-[26px] text-[9px] tracking-[.15em] text-white uppercase [text-shadow:0_1px_18px_rgba(0,0,0,.35)] max-md:right-5 max-md:left-5 max-md:justify-between">
+        <div className="absolute right-[4.5%] bottom-[15px] min-[1200px]:bottom-[30px] flex gap-[26px] text-[9px] tracking-[.15em] text-white uppercase [text-shadow:0_1px_18px_rgba(0,0,0,.35)] max-md:right-5 max-md:left-5 max-md:justify-between">
           <span>{t("conceptStudy")}</span>
           <span>{t("imageMood")}</span>
         </div>
