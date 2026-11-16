@@ -31,7 +31,7 @@ export function ServiceDetails() {
             </em>
           </h2>
 
-          <p className="max-w-[390px] text-sm leading-[1.7] text-[#626760]">
+          <p className="max-w-[390px] text-sm md:text-[15px] leading-[1.7] text-[#626760]">
             {t("intro")}
           </p>
 
@@ -62,7 +62,7 @@ export function ServiceDetails() {
                   toggleService(index);
                 }}
               >
-                <span className="text-[10px] text-[#777b74]">
+                <span className="md:text-[18px] font-light text-[#777b74]">
                   {formatIndex(index)}
                 </span>
 
@@ -83,7 +83,7 @@ export function ServiceDetails() {
 
               <div className="grid grid-cols-[42px_minmax(0,1fr)_30px] gap-3 pb-[32px] pl-[22px] pr-[6px] max-md:px-0">
                 <div className="col-start-2 min-w-0">
-                  <p className="max-w-[530px] text-[13px] leading-[1.8] text-[#5f645d]">
+                  <p className="max-w-[530px] text-[14px] md:text-base leading-[1.8] text-[#5f645d]">
                     {t(`${service.id}.description`)}
                   </p>
 
@@ -91,7 +91,7 @@ export function ServiceDetails() {
                     {([1, 2, 3] as const).map((number) => (
                       <li
                         key={number}
-                        className="border border-[#c5c7bf] px-3 py-2 text-[10px] leading-[1.5] text-[#60645e]"
+                        className="border border-[#c5c7bf] px-3 py-2 text-[12px] leading-[1.5] text-[#60645e]"
                       >
                         {t(`${service.id}.feature${number}`)}
                       </li>

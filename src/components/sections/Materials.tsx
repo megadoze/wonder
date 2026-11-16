@@ -47,14 +47,14 @@ export function Materials() {
             {t("lead")}
           </p>
 
-          <p className="mb-[18px] max-w-[410px] text-sm leading-[1.68] text-[#5f655f]">
+          <p className="mb-[18px] max-w-[410px] text-base leading-[1.68] text-[#5f655f]">
             {t("description")}
           </p>
 
           <button
             type="button"
             onClick={() => goToService(2)}
-            className="group mt-3.5 inline-flex max-w-full min-w-[205px] items-center justify-between gap-6 border-b border-ink bg-transparent py-2.5 text-left text-xs"
+            className="group mt-3.5 inline-flex max-w-full min-w-[205px] items-center justify-between gap-6 border-b border-ink bg-transparent py-2.5 text-left text-sm"
           >
             <span>{t("servicesLink")}</span>
 

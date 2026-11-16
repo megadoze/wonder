@@ -26,7 +26,7 @@ export function Approach() {
             <em className="font-normal text-[#5d675f]">{t("headingLine2")}</em>
           </h2>
 
-          <p className="max-w-[420px] text-[15px] leading-[1.75] text-[#626760]">
+          <p className="max-w-[420px] text-sm md:text-[15px] leading-[1.75] text-[#626760]">
             {t("intro")}
           </p>
         </div>
@@ -52,7 +52,7 @@ export function Approach() {
                 {t(`steps.${step}.title`)}
               </h3>
 
-              <p className="mt-auto max-w-[270px] pt-1 text-[13px] leading-[1.65] text-[#626760]">
+              <p className=" max-w-[300px] pt-1 text-[15px] md:text-base leading-[1.65] text-[#626760]">
                 {t(`steps.${step}.body`)}
               </p>
             </article>

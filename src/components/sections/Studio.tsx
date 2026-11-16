@@ -30,23 +30,23 @@ export function Studio() {
             </em>
           </h2>
 
-          <p className="mt-9 max-w-[410px] text-[16px] leading-[1.65] tracking-[-.01em] text-[#5f655d] max-md:text-[15px]">
+          <p className="mt-9 max-w-[410px] text-sm md:text-[15px] leading-[1.65] tracking-[-.01em] text-[#5f655d]">
             {t("lead")}
           </p>
         </div>
 
         <div className="min-w-0 border-l border-wonder-line pl-8 max-md:border-l-0 max-md:border-t max-md:pl-0 max-md:pt-7">
-          <p className="mb-[18px] text-sm leading-[1.9] text-[#666962]">
+          <p className="mb-[18px] leading-[1.9] text-[#666962]">
             {t("paragraph1")}
           </p>
 
-          <p className="mb-[18px] text-sm leading-[1.9] text-[#666962]">
+          <p className="mb-[18px] leading-[1.9] text-[#666962]">
             {t("paragraph2")}
           </p>
 
           <a
             href="#service-details"
-            className="group mt-6 inline-flex w-max items-center justify-between gap-8 border-b border-ink pb-2.5 text-xs transition-opacity hover:opacity-75"
+            className="group mt-6 inline-flex w-max items-center justify-between gap-8 border-b border-ink pb-2.5 text-sm transition-opacity hover:opacity-75"
           >
             <span>{t("servicesLink")}</span>
 
