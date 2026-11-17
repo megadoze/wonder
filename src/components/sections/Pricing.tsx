@@ -72,9 +72,9 @@ export function Pricing() {
               key={offer.id}
               className="flex min-h-[290px] flex-col border border-[#d0cec5] bg-paper-soft p-[30px] max-md:min-h-[265px] max-md:p-6"
             >
-              <div className="flex items-center justify-between gap-4 text-[9px] tracking-[.14em] text-[#777b74] uppercase">
+              <div className="flex items-center justify-between gap-4 text-[14px] tracking-[.14em] text-[#777b74] uppercase">
                 <span>{String(index + 1).padStart(2, "0")}</span>
-                <span>WONDER</span>
+                {/* <span>WONDER</span> */}
               </div>
 
               <h3 className="mt-9 font-editorial text-[clamp(30px,3vw,44px)] leading-[1.1] tracking-[-.035em] max-md:text-[35px]">
