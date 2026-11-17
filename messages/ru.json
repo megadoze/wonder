@@ -16,7 +16,9 @@
     "approach": "Наш подход",
     "philosophy": "Философия",
     "services": "Услуги",
-    "contact": "Контакты"
+    "contact": "Контакты",
+    "selectedWork": "Реальные проекты",
+    "pricing": "Стоимость"
   },
   "Hero": {
     "ariaLabel": "Знакомство с WONDER",

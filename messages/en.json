@@ -16,7 +16,9 @@
     "approach": "Our Approach",
     "philosophy": "Philosophy",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "selectedWork": "Selected Work",
+    "pricing": "Pricing"
   },
   "Hero": {
     "ariaLabel": "WONDER introduction",

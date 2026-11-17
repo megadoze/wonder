@@ -16,7 +16,9 @@
     "approach": "Nuestro enfoque",
     "philosophy": "Filosofía",
     "services": "Servicios",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "selectedWork": "Proyectos reales",
+    "pricing": "Precios"
   },
   "Hero": {
     "ariaLabel": "Presentación de WONDER",

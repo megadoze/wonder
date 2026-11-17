@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
-import { navigation } from "@/data/content";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
 export function Header() {
@@ -19,18 +18,27 @@ export function Header() {
     body: string;
   } | null>(null);
 
-  const navLabels: Record<string, string> = {
-    "#studio": t("studio"),
-    "#interior-studies": t("studies"),
-    "#studies": t("studies"),
-    "#work": t("studies"),
-    "#materials": t("materials"),
-    "#approach": t("approach"),
-    "#philosophy": t("philosophy"),
-    "#services": t("services"),
-    "#service-details": t("services"),
-    "#contact": t("contact"),
-  };
+  // DESKTOP — only primary destinations
+  const desktopNavigation = [
+    { href: "#studio", label: t("studio") },
+    { href: "#selected-work", label: t("selectedWork") },
+    { href: "#service-details", label: t("services") },
+    { href: "#pricing", label: t("pricing") },
+    { href: "#contact", label: t("contact") },
+  ];
+
+  // MOBILE — all sections in page order
+  const mobileNavigation = [
+    { href: "#studio", label: t("studio") },
+    { href: "#work", label: t("studies") },
+    { href: "#selected-work", label: t("selectedWork") },
+    { href: "#materials", label: t("materials") },
+    { href: "#approach", label: t("approach") },
+    { href: "#philosophy", label: t("philosophy") },
+    { href: "#service-details", label: t("services") },
+    { href: "#pricing", label: t("pricing") },
+    { href: "#contact", label: t("contact") },
+  ];
 
   const unlockScroll = useCallback(() => {
     const previous = scrollLockRef.current;
@@ -48,10 +56,10 @@ export function Header() {
     setMenuOpen(false);
   }, [unlockScroll]);
 
-  // Close mobile menu when switching to desktop.
+  // Match the project's Tailwind md breakpoint: 781px.
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 781) {
         closeMenu();
       }
     };
@@ -63,7 +71,7 @@ export function Header() {
     };
   }, [closeMenu]);
 
-  // Lock scrolling and manage keyboard navigation.
+  // Lock background scrolling and manage keyboard navigation.
   useEffect(() => {
     if (!menuOpen) return;
 
@@ -118,7 +126,6 @@ export function Header() {
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-
       unlockScroll();
     };
   }, [menuOpen, closeMenu, unlockScroll]);
@@ -142,7 +149,7 @@ export function Header() {
         ${menuOpen ? "max-md:fixed max-md:z-50" : ""}
       `}
     >
-      {/* BRAND */}
+      {/* BRAND — unchanged */}
       <div className="pointer-events-auto relative z-10 flex min-w-0 items-center gap-5 max-md:gap-3 md:max-lg:gap-3">
         <a
           href="#top"
@@ -168,14 +175,14 @@ export function Header() {
         </span>
       </div>
 
-      {/* DESKTOP NAVIGATION */}
+      {/* DESKTOP NAVIGATION — 5 MAIN LINKS */}
       <nav
         aria-label={t("mainNavigation")}
         className="pointer-events-auto hidden items-center justify-self-end gap-[34px] text-xs md:flex md:max-lg:gap-5 lg:text-white"
       >
-        {navigation.map((item) => (
+        {desktopNavigation.map((item) => (
           <a key={item.href} href={item.href} className="group relative py-2">
-            <span>{navLabels[item.href] ?? item.label}</span>
+            <span>{item.label}</span>
 
             <span
               aria-hidden="true"
@@ -185,7 +192,7 @@ export function Header() {
         ))}
       </nav>
 
-      {/* MOBILE FULLSCREEN MENU */}
+      {/* MOBILE FULLSCREEN MENU — ALL 9 SECTIONS */}
       <nav
         id="primary-nav"
         aria-label={t("mainNavigation")}
@@ -212,7 +219,7 @@ export function Header() {
         <div
           className={`
             flex min-h-full flex-col
-            px-5 pt-[108px]
+            px-5 pt-[96px]
             pb-[max(30px,env(safe-area-inset-bottom))]
             transition-[opacity,transform]
             duration-500
@@ -225,15 +232,15 @@ export function Header() {
         >
           {/* Navigation links */}
           <div className="border-t border-[#c6c4bc]">
-            {navigation.map((item, index) => (
+            {desktopNavigation.map((item, index) => (
               <a
                 key={item.href}
                 ref={index === 0 ? firstLinkRef : undefined}
                 href={item.href}
                 onClick={closeMenu}
-                className="group flex items-center justify-between gap-4 border-b border-[#d0cec7] py-[18px] font-sans text-[clamp(24px,7vw,34px)] font-light leading-[1.1] tracking-[-.025em] text-[#232722] transition-colors duration-200 hover:text-[#657466] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-forest"
+                className="group flex items-center justify-between gap-4 border-b border-[#d0cec7] py-[13px] font-sans text-[clamp(20px,5.8vw,27px)] font-light leading-[1.1] tracking-[-.025em] text-[#232722] transition-colors duration-200 hover:text-[#657466] focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-forest"
               >
-                <span>{navLabels[item.href] ?? item.label}</span>
+                <span>{item.label}</span>
 
                 <svg
                   aria-hidden="true"
@@ -253,7 +260,7 @@ export function Header() {
           </div>
 
           {/* LANGUAGE SWITCHER — NO TOP BORDER */}
-          <div className="mt-auto pt-10">
+          <div className="mt-auto pt-6">
             <div className="pt-6">
               <LanguageSwitcher className="gap-3 text-[13px]" />
             </div>
@@ -261,7 +268,7 @@ export function Header() {
         </div>
       </nav>
 
-      {/* ANIMATED MOBILE MENU BUTTON */}
+      {/* ANIMATED MOBILE MENU BUTTON — unchanged */}
       <button
         ref={menuButtonRef}
         type="button"
