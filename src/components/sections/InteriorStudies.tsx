@@ -32,7 +32,7 @@ export function InteriorStudies() {
           <em className="font-normal text-[#c6c9be]">{t("headingLine2")}</em>
         </h2>
 
-        <p className="mb-[5px] max-w-[310px] text-[15px] leading-[1.75] text-[#c5c9c0] max-md:max-w-[450px]">
+        <p className="mb-[5px] max-w-[310px] text-[15px] md:text-base leading-[1.75] text-[#c5c9c0] max-md:max-w-[450px]">
           {t("intro")}
         </p>
       </div>

@@ -30,7 +30,7 @@ export function Studio() {
             </em>
           </h2>
 
-          <p className="mt-9 max-w-[550px] text-[16px] leading-[1.65] tracking-[-.01em] text-[#757c70]">
+          <p className="mt-9 max-w-[550px] text-[15px] md:text-[16px] leading-[1.65] tracking-[-.01em] text-[#757c70]">
             {t("lead")}
           </p>
         </div>

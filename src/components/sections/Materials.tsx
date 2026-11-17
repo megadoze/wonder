@@ -43,7 +43,7 @@ export function Materials() {
             <em className="font-normal text-[#59655b]">{t("headingLine2")}</em>
           </h2>
 
-          <p className="mb-[18px] max-w-[380px] text-xl leading-[1.35] tracking-[-.022em] max-md:text-[19px]">
+          <p className="mb-[18px] max-w-[380px] text-xl leading-[1.35] tracking-[-.022em] max-md:text-[18px]">
             {t("lead")}
           </p>
 

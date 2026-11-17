@@ -31,7 +31,7 @@ export function ServiceDetails() {
             </em>
           </h2>
 
-          <p className="max-w-[390px] text-[15px] leading-[1.7] text-[#626760]">
+          <p className="max-w-[390px] text-[15px] md:text-base leading-[1.7] text-[#626760]">
             {t("intro")}
           </p>
 
