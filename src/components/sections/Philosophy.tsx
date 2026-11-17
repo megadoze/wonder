@@ -37,11 +37,11 @@ export function Philosophy() {
             <em className="font-normal text-[#667263]">{t("headingLine2")}</em>
           </h2>
 
-          <p className="mb-5 max-w-[435px] leading-[1.5] tracking-[-.01em] text-[#50574f]">
+          <p className="mb-5 max-w-[435px] leading-[1.8] tracking-[-.01em] text-[#50574f]">
             {t("lead")}
           </p>
 
-          <p className="max-w-[435px] leading-[1.8] text-[#50574f]">
+          <p className="max-w-[435px] leading-[1.8] tracking-[-.01em] text-[#50574f]">
             {t("description")}
           </p>
         </div>
