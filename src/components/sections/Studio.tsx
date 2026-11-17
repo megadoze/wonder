@@ -30,17 +30,17 @@ export function Studio() {
             </em>
           </h2>
 
-          <p className="mt-9 max-w-[550px] text-[15px] md:text-[16px] leading-[1.65] tracking-[-.01em] text-[#757c70]">
+          <p className="mt-9 max-w-[550px] text-[15px] md:text-[16px] leading-[1.65] tracking-[-.01em] text-[#525650]">
             {t("lead")}
           </p>
         </div>
 
         <div className="min-w-0 border-l border-wonder-line pl-8 max-md:border-l-0 max-md:border-t max-md:pl-0 max-md:pt-7">
-          <p className="mb-[18px] leading-[1.9] text-[#666962]">
+          <p className="mb-[18px] leading-[1.7] text-[#666962]">
             {t("paragraph1")}
           </p>
 
-          <p className="mb-[18px] leading-[1.9] text-[#666962]">
+          <p className="mb-[18px] leading-[1.7] text-[#666962]">
             {t("paragraph2")}
           </p>
 
