@@ -52,10 +52,10 @@ export function Hero() {
           </a>
 
           <a
-            href="#approach"
+            href="#selected-work"
             className="group inline-flex min-w-[146px] items-center justify-between gap-6 rounded-full border border-ink bg-transparent px-[21px] py-[13px] text-sm transition-colors hover:bg-white max-[360px]:min-w-0 max-[360px]:gap-4 max-[360px]:px-4"
           >
-            <span>{t("ourApproach")}</span>
+            <span>{t("viewProjects")}</span>
 
             <svg
               aria-hidden="true"

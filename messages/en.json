@@ -27,14 +27,14 @@
     "line3": "like you.",
     "description": "Thoughtful interiors with character — shaped around the way you live.",
     "startProject": "Start a project",
-    "ourApproach": "Our approach",
+    "viewProjects": "View Projects",
     "imageAlt": "Contemporary living room with sculptural furniture, warm stone, dark wood and a wide landscape view",
     "conceptStudy": "CONCEPT STUDY",
     "imageMood": "COASTAL / WARM MODERN"
   },
   "Services": {
     "ariaLabel": "WONDER services",
-    "sectionLabel": "07 / WHAT WE DO",
+    "sectionLabel": "03 / WHAT WE DO",
     "sectionRight": "FOUR FOCUSED SERVICES",
     "headingLine1": "Four ways to work",
     "headingLine2": "with WONDER.",
@@ -115,7 +115,7 @@
     "modalDisclaimer": "CONCEPTUAL INTERIOR STUDY — NOT A COMPLETED COMMISSION"
   },
   "Approach": {
-    "sectionLabel": "05 / OUR APPROACH",
+    "sectionLabel": "06 / OUR APPROACH",
     "sectionRight": "FROM BRIEF TO DESIGN",
     "headingLine1": "How an idea",
     "headingLine2": "takes shape.",
@@ -140,7 +140,7 @@
     }
   },
   "Philosophy": {
-    "sectionLabel": "06 / PHILOSOPHY",
+    "sectionLabel": "07 / PHILOSOPHY",
     "headingLine1": "Thoughtful by",
     "headingLine2": "design.",
     "lead": "An interior can be beautiful at first glance and still have more to reveal. A change in light, an unexpected pairing, a detail discovered over time — these are the moments that give a space depth.",
@@ -150,7 +150,7 @@
     "servicesLinkLabel": "Explore WONDER services"
   },
   "Materials": {
-    "sectionLabel": "04 / MATERIALS & DETAILS",
+    "sectionLabel": "05 / MATERIALS & DETAILS",
     "sectionRight": "TEXTURE / LIGHT / FORM",
     "eyebrow": "AN EYE FOR THE DETAILS",
     "headingLine1": "Materials",
@@ -192,7 +192,7 @@
     "imageAlt": "Contemporary interior design concept by WONDER"
   },
   "SelectedWork": {
-    "sectionLabel": "03 / SELECTED WORK",
+    "sectionLabel": "04 / SELECTED WORK",
     "sectionRight": "REAL SPACES / REAL PROJECTS",
     "headingLine1": "Selected",
     "headingLine2": "Work.",
@@ -233,8 +233,8 @@
   "Pricing": {
     "sectionLabel": "08 / PRICING",
     "sectionRight": "DESIGN SERVICES / INDICATIVE FEES",
-    "headingLine1": "Design",
-    "headingLine2": "& Pricing.",
+    "headingLine1": "Pricing.",
+    "headingLine2": "",
     "intro": "Different spaces call for different levels of support. These starting points help you explore the right scope for your project.",
     "from": "From",
     "customQuote": "Custom quote",

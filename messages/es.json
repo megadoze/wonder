@@ -27,14 +27,14 @@
     "line3": "de ti.",
     "description": "Interiores con carácter, pensados para tu forma de vivir.",
     "startProject": "Hablemos",
-    "ourApproach": "Nuestro enfoque",
+    "viewProjects": "Ver proyectos",
     "imageAlt": "Salón contemporáneo con muebles escultóricos, piedra natural, madera oscura y vistas panorámicas",
     "conceptStudy": "ESTUDIO CONCEPTUAL",
     "imageMood": "COSTERO / MODERNO CÁLIDO"
   },
   "Services": {
     "ariaLabel": "Servicios de WONDER",
-    "sectionLabel": "07 / QUÉ HACEMOS",
+    "sectionLabel": "03 / QUÉ HACEMOS",
     "sectionRight": "CUATRO SERVICIOS",
     "headingLine1": "Servicios",
     "headingLine2": "de WONDER.",
@@ -115,7 +115,7 @@
     "modalDisclaimer": "ESTUDIO CONCEPTUAL DE INTERIORISMO — NO ES UN PROYECTO REALIZADO PARA UN CLIENTE"
   },
   "Approach": {
-    "sectionLabel": "05 / NUESTRO ENFOQUE",
+    "sectionLabel": "06 / NUESTRO ENFOQUE",
     "sectionRight": "DEL BRIEF AL DISEÑO",
     "headingLine1": "De la idea",
     "headingLine2": "al espacio.",
@@ -140,7 +140,7 @@
     }
   },
   "Philosophy": {
-    "sectionLabel": "06 / FILOSOFÍA",
+    "sectionLabel": "07 / FILOSOFÍA",
     "headingLine1": "Pensado",
     "headingLine2": "al detalle.",
     "lead": "Un interior puede cautivar a primera vista y, aun así, seguir revelando matices. Un cambio de luz, una combinación inesperada o un detalle que se descubre con el tiempo son los momentos que dan profundidad a un espacio.",
@@ -150,7 +150,7 @@
     "servicesLinkLabel": "Descubrir los servicios de WONDER"
   },
   "Materials": {
-    "sectionLabel": "04 / MATERIALES Y DETALLES",
+    "sectionLabel": "05 / MATERIALES Y DETALLES",
     "sectionRight": "TEXTURA / LUZ / FORMA",
     "eyebrow": "ATENCIÓN AL DETALLE",
     "headingLine1": "Materiales",
@@ -192,7 +192,7 @@
     "imageAlt": "Concepto de interiorismo contemporáneo de WONDER"
   },
   "SelectedWork": {
-    "sectionLabel": "03 / PROYECTOS REALES",
+    "sectionLabel": "04 / PROYECTOS REALES",
     "sectionRight": "ESPACIOS / SOLUCIONES / DETALLES",
     "headingLine1": "Proyectos",
     "headingLine2": "reales.",

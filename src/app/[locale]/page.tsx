@@ -33,17 +33,13 @@ export default function HomePage() {
       <main id="main">
         <ScrollReveal />
 
-        {/* <div className="relative"> */}
         <Hero />
-
-        {/* <div className="min-[1200px]:absolute min-[1200px]:inset-x-0 min-[1200px]:bottom-0 min-[1200px]:z-10">
-            <ServiceStrip />
-          </div> */}
-        {/* </div> */}
 
         <Studio />
 
         <InteriorStudies />
+
+        <ServiceDetails />
 
         <SelectedWork />
 
@@ -52,8 +48,6 @@ export default function HomePage() {
         <Approach />
 
         <Philosophy />
-
-        <ServiceDetails />
 
         <Pricing />
 
