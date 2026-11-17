@@ -87,7 +87,7 @@ export function Materials() {
           <figure className="group relative m-0 h-full min-h-0 min-w-0 overflow-hidden bg-[#d4cec1] max-md:h-[clamp(280px,66vw,460px)]">
             <Image
               alt={t("image1Alt")}
-              src="/images/materials-stone-and-textiles.webp"
+              src="/images/materials/materials-01.webp"
               fill
               sizes="(max-width: 780px) 100vw, 50vw"
               className="object-cover object-[53%_50%] transition-transform duration-700 group-hover:scale-[1.026]"
@@ -106,7 +106,7 @@ export function Materials() {
             <figure className="group relative m-0 min-h-0 min-w-0 overflow-hidden bg-[#d4cec1]">
               <Image
                 alt={t("image2Alt")}
-                src="/images/stone-texture.webp"
+                src="/images/materials/materials-02.webp"
                 fill
                 sizes="(max-width: 780px) 50vw, 20vw"
                 className="object-cover object-[48%_50%] transition-transform duration-700 group-hover:scale-[1.026]"
@@ -120,7 +120,7 @@ export function Materials() {
             <figure className="group relative m-0 min-h-0 min-w-0 overflow-hidden bg-[#d4cec1]">
               <Image
                 alt={t("image3Alt")}
-                src="/images/material-palette.webp"
+                src="/images/materials/materials-03.webp"
                 fill
                 sizes="(max-width: 780px) 50vw, 20vw"
                 className="object-cover object-[50%_45%] transition-transform duration-700 group-hover:scale-[1.026]"

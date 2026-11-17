@@ -6,11 +6,14 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 // import { ServiceStrip } from "@/components/sections/ServiceStrip";
 import { Studio } from "@/components/sections/Studio";
+
+import { SelectedWork } from "@/components/sections/SelectedWork";
 import { InteriorStudies } from "@/components/sections/InteriorStudies";
 import { Materials } from "@/components/sections/Materials";
 import { Approach } from "@/components/sections/Approach";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { ServiceDetails } from "@/components/sections/ServiceDetails";
+import { Pricing } from "@/components/sections/Pricing";
 import { Contact } from "@/components/sections/Contact";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -30,7 +33,6 @@ export default function HomePage() {
       <main id="main">
         <ScrollReveal />
 
-        {/* HERO + SERVICE STRIP */}
         {/* <div className="relative"> */}
         <Hero />
 
@@ -39,25 +41,22 @@ export default function HomePage() {
           </div> */}
         {/* </div> */}
 
-        {/* STUDIO */}
         <Studio />
 
-        {/* INTERIOR STUDIES */}
         <InteriorStudies />
 
-        {/* MATERIALS */}
+        <SelectedWork />
+
         <Materials />
 
-        {/* APPROACH */}
         <Approach />
 
-        {/* PHILOSOPHY */}
         <Philosophy />
 
-        {/* SERVICES */}
         <ServiceDetails />
 
-        {/* CONTACT */}
+        <Pricing />
+
         <Contact />
       </main>
 

@@ -1,7 +1,5 @@
-
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { SectionRule } from "@/components/ui/SectionRule";
 import { useExperience } from "@/components/ui/ExperienceProvider";
@@ -16,34 +14,19 @@ export function ServiceDetails() {
       id="service-details"
       className="bg-paper px-[4.5%] pt-[72px] pb-[85px] max-md:px-5 max-md:py-16"
     >
-      <SectionRule
-        left={t("sectionLabel")}
-        right={t("sectionRight")}
-      />
+      <SectionRule left={t("sectionLabel")} right={t("sectionRight")} />
 
       <div className="grid grid-cols-[.8fr_1.2fr] gap-[8vw] pt-[66px] max-lg:md:grid-cols-[1fr_1.25fr] max-md:grid-cols-1 max-md:pt-12">
         <div>
           <h2 className="mb-[26px] font-editorial text-[clamp(53px,5vw,82px)] leading-[.92] tracking-[-.035em] max-md:text-[clamp(50px,13vw,70px)]">
             {t("headingLine1")}
             <br />
-            <em className="font-normal text-[#5d675f]">
-              {t("headingLine2")}
-            </em>
+            <em className="font-normal text-[#5d675f]">{t("headingLine2")}</em>
           </h2>
 
           <p className="max-w-[390px] text-[15px] md:text-base leading-[1.7] text-[#626760]">
             {t("intro")}
           </p>
-
-          <div className="relative mt-[45px] h-[185px] w-[70%] max-md:h-[170px] max-md:w-[62%]">
-            <Image
-              alt={t("materialsImageAlt")}
-              src="/images/material-palette.webp"
-              fill
-              sizes="(max-width: 780px) 65vw, 30vw"
-              className="object-cover saturate-[.82]"
-            />
-          </div>
         </div>
 
         <div className="border-t border-[#bfc1b9]">

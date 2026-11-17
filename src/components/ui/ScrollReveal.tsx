@@ -5,10 +5,12 @@ import { useEffect } from "react";
 const sectionIds = [
   "studio",
   "work",
+  "selected-work",
   "materials",
   "approach",
   "philosophy",
   "service-details",
+  "pricing",
   "contact",
 ];
 

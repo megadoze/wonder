@@ -32,7 +32,7 @@
   },
   "Services": {
     "ariaLabel": "Servicios de WONDER",
-    "sectionLabel": "06 / QUÉ HACEMOS",
+    "sectionLabel": "07 / QUÉ HACEMOS",
     "sectionRight": "CUATRO SERVICIOS",
     "headingLine1": "Servicios",
     "headingLine2": "de WONDER.",
@@ -113,7 +113,7 @@
     "modalDisclaimer": "ESTUDIO CONCEPTUAL DE INTERIORISMO — NO ES UN PROYECTO REALIZADO PARA UN CLIENTE"
   },
   "Approach": {
-    "sectionLabel": "04 / NUESTRO ENFOQUE",
+    "sectionLabel": "05 / NUESTRO ENFOQUE",
     "sectionRight": "DEL BRIEF AL DISEÑO",
     "headingLine1": "De la idea",
     "headingLine2": "al espacio.",
@@ -138,7 +138,7 @@
     }
   },
   "Philosophy": {
-    "sectionLabel": "05 / FILOSOFÍA",
+    "sectionLabel": "06 / FILOSOFÍA",
     "headingLine1": "Pensado",
     "headingLine2": "al detalle.",
     "lead": "Un interior puede cautivar a primera vista y, aun así, seguir revelando matices. Un cambio de luz, una combinación inesperada o un detalle que se descubre con el tiempo son los momentos que dan profundidad a un espacio.",
@@ -148,7 +148,7 @@
     "servicesLinkLabel": "Descubrir los servicios de WONDER"
   },
   "Materials": {
-    "sectionLabel": "03 / MATERIALES Y DETALLES",
+    "sectionLabel": "04 / MATERIALES Y DETALLES",
     "sectionRight": "TEXTURA / LUZ / FORMA",
     "eyebrow": "ATENCIÓN AL DETALLE",
     "headingLine1": "Materiales",
@@ -167,7 +167,7 @@
     "image3Caption": "03 / PALETA DE MATERIALES"
   },
   "Contact": {
-    "sectionLabel": "07 / HABLEMOS DE TU PROYECTO",
+    "sectionLabel": "09 / HABLEMOS DE TU PROYECTO",
     "sectionRight": "WONDER / DISEÑO DE INTERIORES",
     "headingLine1": "Hablemos",
     "headingLine2": "de tu espacio.",
@@ -188,5 +188,76 @@
     "title": "WONDER — Estudio de diseño de interiores",
     "description": "WONDER es un estudio independiente de interiorismo. Diseño de interiores, distribución de espacios, selección de mobiliario y materiales, y asesoría de diseño.",
     "imageAlt": "Concepto de interiorismo contemporáneo de WONDER"
+  },
+  "SelectedWork": {
+    "sectionLabel": "03 / PROYECTOS REALES",
+    "sectionRight": "ESPACIOS / SOLUCIONES / DETALLES",
+    "headingLine1": "Proyectos",
+    "headingLine2": "reales.",
+    "intro": "Más allá de los conceptos, una mirada a proyectos residenciales reales, decisiones de distribución, visualizaciones y detalles de ejecución.",
+    "caseLabel": "PROYECTO RESIDENCIAL",
+    "mediaPending": "DOCUMENTACIÓN DEL PROYECTO PENDIENTE",
+    "mediaAlt": "{type} — {project}",
+    "mediaTypes": {
+      "plan": "Plano de distribución",
+      "visualization": "Visualización del interior",
+      "realization": "Interior realizado",
+      "detail": "Detalles del proyecto"
+    },
+    "projects": {
+      "apartment82": {
+        "title": "Apartamento de 82 m²",
+        "description": "Un proyecto residencial desarrollado mediante propuestas de distribución, visualizaciones y soluciones prácticas de diseño.",
+        "focus1": "Distribución espacial",
+        "focus2": "Visualizaciones",
+        "focus3": "Soluciones de diseño"
+      },
+      "apartment42": {
+        "title": "Apartamento de 42 m²",
+        "description": "Un apartamento compacto con una cocina realizada. El proyecto destaca por las decisiones espaciales, los materiales y los detalles.",
+        "focus1": "Cocina realizada",
+        "focus2": "Materiales",
+        "focus3": "Detalles interiores"
+      }
+    },
+      "galleryLabel": "{project} — galería del proyecto",
+      "viewImage": "AMPLIAR",
+      "openImage": "Ampliar imagen: {type}",
+      "closeImage": "Cerrar imagen",
+      "previousImage": "Imagen anterior",
+      "nextImage": "Imagen siguiente",
+      "imageCounter": "{current} / {total}"
+  },
+  "Pricing": {
+    "sectionLabel": "08 / PRECIOS",
+    "sectionRight": "SERVICIOS / TARIFAS ORIENTATIVAS",
+    "headingLine1": "Precios",
+    "headingLine2": "orientativos.",
+    "intro": "Cada espacio requiere un nivel de atención diferente. Estas tarifas iniciales te ayudan a explorar el alcance y el presupuesto de tu proyecto.",
+    "from": "Desde",
+    "customQuote": "Presupuesto a medida",
+    "whatsappLink": "WhatsApp",
+    "contactLink": "Consultar",
+    "contactAria": "Consultar sobre {service} con WONDER",
+    "whatsappMessage": "Hola, WONDER. Me gustaría consultar sobre el servicio: {service}.",
+    "priceNote": "Precios iniciales orientativos. El alcance, los entregables y el presupuesto definitivo se acuerdan individualmente antes de comenzar.",
+    "offers": {
+      "designConsultation": {
+        "title": "Asesoría de diseño",
+        "description": "Orientación personalizada sobre tu espacio, tus ideas y las decisiones de diseño más importantes."
+      },
+      "spacePlanning": {
+        "title": "Distribución de espacios",
+        "description": "Propuestas de distribución para aprovechar mejor el espacio y mejorar su funcionalidad."
+      },
+      "roomConcept": {
+        "title": "Concepto de diseño",
+        "description": "Una dirección visual coherente para una estancia, considerando mobiliario, materiales y ambiente."
+      },
+      "fullDesign": {
+        "title": "Diseño integral de interiores",
+        "description": "Un proyecto de interiorismo adaptado a las dimensiones, complejidad y necesidades de cada espacio."
+      }
+    }
   }
 }

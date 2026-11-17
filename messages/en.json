@@ -32,7 +32,7 @@
   },
   "Services": {
     "ariaLabel": "WONDER services",
-    "sectionLabel": "06 / WHAT WE DO",
+    "sectionLabel": "07 / WHAT WE DO",
     "sectionRight": "FOUR FOCUSED SERVICES",
     "headingLine1": "Four ways to work",
     "headingLine2": "with WONDER.",
@@ -113,7 +113,7 @@
     "modalDisclaimer": "CONCEPTUAL INTERIOR STUDY — NOT A COMPLETED COMMISSION"
   },
   "Approach": {
-    "sectionLabel": "04 / OUR APPROACH",
+    "sectionLabel": "05 / OUR APPROACH",
     "sectionRight": "FROM BRIEF TO DESIGN",
     "headingLine1": "How an idea",
     "headingLine2": "takes shape.",
@@ -138,7 +138,7 @@
     }
   },
   "Philosophy": {
-    "sectionLabel": "05 / PHILOSOPHY",
+    "sectionLabel": "06 / PHILOSOPHY",
     "headingLine1": "Thoughtful by",
     "headingLine2": "design.",
     "lead": "An interior can be beautiful at first glance and still have more to reveal. A change in light, an unexpected pairing, a detail discovered over time — these are the moments that give a space depth.",
@@ -148,7 +148,7 @@
     "servicesLinkLabel": "Explore WONDER services"
   },
   "Materials": {
-    "sectionLabel": "03 / MATERIALS & DETAILS",
+    "sectionLabel": "04 / MATERIALS & DETAILS",
     "sectionRight": "TEXTURE / LIGHT / FORM",
     "eyebrow": "AN EYE FOR THE DETAILS",
     "headingLine1": "Materials",
@@ -167,7 +167,7 @@
     "image3Caption": "03 / MATERIAL PALETTE"
   },
   "Contact": {
-    "sectionLabel": "07 / START A CONVERSATION",
+    "sectionLabel": "09 / START A CONVERSATION",
     "sectionRight": "WONDER / INTERIOR DESIGN",
     "headingLine1": "Let’s begin",
     "headingLine2": "with your space.",
@@ -188,5 +188,76 @@
     "title": "WONDER — Interior Design Studio",
     "description": "Thoughtful interiors with character. Explore interior design, space planning, furniture and material selection, and design consultations by WONDER.",
     "imageAlt": "Contemporary interior design concept by WONDER"
+  },
+  "SelectedWork": {
+    "sectionLabel": "03 / SELECTED WORK",
+    "sectionRight": "REAL SPACES / REAL PROJECTS",
+    "headingLine1": "Selected",
+    "headingLine2": "Work.",
+    "intro": "Beyond concepts, a closer look at real residential projects, spatial decisions and the details involved in bringing an interior together.",
+    "caseLabel": "RESIDENTIAL PROJECT",
+    "mediaPending": "PROJECT DOCUMENTATION TO BE ADDED",
+    "mediaAlt": "{type} — {project}",
+    "mediaTypes": {
+      "plan": "Floor plan",
+      "visualization": "Design visualization",
+      "realization": "Completed interior",
+      "detail": "Design detail"
+    },
+    "projects": {
+      "apartment82": {
+        "title": "Apartment 82 m²",
+        "description": "A residential design project explored through spatial layouts, visualizations and practical design decisions.",
+        "focus1": "Space planning",
+        "focus2": "Visualizations",
+        "focus3": "Design solutions"
+      },
+      "apartment42": {
+        "title": "Apartment 42 m²",
+        "description": "A compact apartment project featuring a completed kitchen and the design decisions behind its realization.",
+        "focus1": "Completed kitchen",
+        "focus2": "Materials",
+        "focus3": "Interior details"
+      }
+    },
+      "galleryLabel": "{project} — project gallery",
+      "viewImage": "VIEW IMAGE",
+      "openImage": "Enlarge {type}",
+      "closeImage": "Close image",
+      "previousImage": "Previous image",
+      "nextImage": "Next image",
+      "imageCounter": "{current} / {total}"
+  },
+  "Pricing": {
+    "sectionLabel": "08 / PRICING",
+    "sectionRight": "DESIGN SERVICES / INDICATIVE FEES",
+    "headingLine1": "Design",
+    "headingLine2": "& Pricing.",
+    "intro": "Different spaces call for different levels of support. These starting points help you explore the right scope for your project.",
+    "from": "From",
+    "customQuote": "Custom quote",
+    "whatsappLink": "WhatsApp",
+    "contactLink": "Get in touch",
+    "contactAria": "Discuss {service} with WONDER",
+    "whatsappMessage": "Hello WONDER, I would like to discuss {service}.",
+    "priceNote": "Indicative starting prices. The scope, deliverables and final fee are agreed individually before work begins.",
+    "offers": {
+      "designConsultation": {
+        "title": "Design Consultation",
+        "description": "Focused guidance on your space, ideas and important design decisions."
+      },
+      "spacePlanning": {
+        "title": "Space Planning",
+        "description": "Exploring layouts and spatial solutions to make better use of a defined area."
+      },
+      "roomConcept": {
+        "title": "Room Design Concept",
+        "description": "A coordinated visual direction for one room, considering furniture, materials and atmosphere."
+      },
+      "fullDesign": {
+        "title": "Full Interior Design",
+        "description": "A comprehensive design approach shaped around the size, complexity and needs of your project."
+      }
+    }
   }
 }
